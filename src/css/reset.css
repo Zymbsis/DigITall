@@ -21,11 +21,17 @@ ul {
 
 a {
   color: currentColor;
+  font-family: inherit;
   text-decoration: none;
 }
 
 button {
   cursor: pointer;
+  border: none;
+}
+
+input {
+  outline: transparent;
 }
 
 img {
