@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/your-order.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h2 class="section-title order-title">
+        <span>Your order </span>is our priority: Personalized approach and
+        quality of service
+      </h2>
+      <form class="order-form" name="orderform" autocomplete="off">
+        <label class="form-label" for="user-name"></label>
+        <input
+          class="form-input"
+          type="text"
+          name="user-name"
+          id="user-name"
+          placeholder="Enter your full name"
+          required
+          minlength="3"
+        />
+        <label class="form-label" for="user-email"></label>
+        <input
+          class="form-input"
+          type="email"
+          name="email"
+          id="user-email"
+          placeholder="Enter your email"
+          required
+        />
+        <label class="form-label" for="user-comment"></label>
+        <textarea
+          class="textarea"
+          name="user-comment"
+          id="user-comment"
+          placeholder="Comments"
+        ></textarea>
+        <button type="submit" class="order-button">
+          <span class="button-text">send</span>
+          <svg width="27" height="10" class="button-icon">
+            <use href="../img/icons.svg#arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </section>
+  </body>
+</html>
