@@ -6,10 +6,31 @@
 
 .slogan {}
 
-.hero-title {}
+.hero-title {
+  margin-bottom: 20px;
+}
 
-.hero-button {}
+.hero-button {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  height: 49px;
+  padding: 13px 35px;
+  gap: 10px;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.10);
+  background-color: transparent;
+  color: #FCF9F9;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
 
-.hero-button-icon {}
+.hero-button-icon {
+  transform: rotate(-30deg);
+  fill: #ECD979;
+}
 
 .hero-photo {}
