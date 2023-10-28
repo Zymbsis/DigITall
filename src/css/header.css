@@ -1,9 +1,9 @@
 .header {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
   display: flex;
   align-items: center;
 }
@@ -29,11 +29,6 @@
 .header-nav-link {
 }
 
-/* .header-nav-link:hover,
-.header-nav-link:focus {
-  color: #ecd979;
-} */
-
 .header-address {
   font-style: normal;
   display: none;
@@ -41,16 +36,27 @@
   margin-left: auto;
 }
 
-.header-tel {
-  font-size: 14px;
-  line-height: 1.43;
-  text-transform: uppercase;
+.tel-styles {
+  font-size: 12px;
+  line-height: 1.17;
+  font-style: normal;
   display: inline-flex;
-  padding: 14px 28px;
+  padding: 11px 19px;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  border: 1px solid rgba(252, 249, 249, 0.1);
+  border: 1px solid rgba(28, 34, 37, 0.1);
+  color: #1c2225;
+}
+
+.header-tel {
+  color: inherit;
+  border-color: rgba(252, 249, 249, 0.1);
+}
+
+.header-tel:hover,
+.header-tel:focus {
+  border-color: #ecd979;
 }
 
 .header-soc-list {
@@ -70,7 +76,7 @@
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
   background: rgba(252, 249, 249, 0.1);
-  padding: 8px;
+  padding: 7px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,18 +86,81 @@
   fill: #fcf9f9;
 }
 
-.opn-menu-btn {
+.open-menu-btn {
   background: transparent;
+  margin-left: 12px;
 }
 
-.opn-menu-icon {
+.open-menu-icon {
   stroke: #ecd979;
+}
+
+.mob-menu {
+  position: fixed;
+  height: 100vh;
+  width: 274px;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #ecd979;
+  padding: 20px;
+}
+
+.close-menu-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  stroke: #1c2225;
+}
+
+.close-menu-icon {
+}
+
+.menu-address {
+}
+
+.menu-nav {
+  text-align: end;
+  margin-top: 186px;
+}
+
+.menu-nav-list {
+}
+
+.menu-nav-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.menu-nav-item .nav-link {
+  color: #1c2225;
+}
+
+.nav-link {
 }
 
 @media screen and (min-width: 375px) {
 }
 
 @media screen and (min-width: 768px) {
+  .mob-menu {
+    width: 380px;
+    padding: 20px 32px;
+  }
+
+  .menu-nav {
+    margin-top: 223px;
+  }
+
+  .menu-nav-item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .tel-styles {
+    font-size: 14px;
+    line-height: 1.43;
+    padding: 13px 27px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -105,6 +174,10 @@
 
   .header-address {
     display: block;
+  }
+
+  .opn-menu-icon {
+    display: none;
   }
 }
 
