@@ -12,7 +12,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../img/mobile/Footer/footer-elements-mob1x.png);
+    background-image: url(../img/mobile/Footer/footer-elements-mob1x.png);
     background-position-y: bottom;
     /* background-position-x: center; */
     background-repeat: no-repeat;
@@ -24,11 +24,13 @@
 
 .footer-nav-list {
     display: flex;
-    gap: 40px;
+    gap: 25px 40px;
     flex-wrap: wrap;
 }
 
-.footer-nav-item {}
+.footer-nav-item {
+    flex-basis: calc((100% - 40px) / 2);
+}
 
 .footer-nav-link {}
 
