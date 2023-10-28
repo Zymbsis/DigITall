@@ -14,6 +14,10 @@
   margin-bottom: 40px;
 }
 
+.hero-button-link {
+  padding: 13px 35px;
+}
+
 .hero-button-icon {
   transform: rotate(-30deg);
   fill: #ECD979;
