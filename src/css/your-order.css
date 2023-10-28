@@ -1,14 +1,20 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.order-banner-top {
+  margin: 0 auto;
+  margin-bottom: 80px;
+  width: 375px;
+  height: 550px;
+  background-image: url(../img/mobile/Order/order-girlingreen-mob1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
+/* .order-container {
+} */
+
 .order-title {
-  max-width: 375px;
-  margin: 0 auto 40px;
+  max-width: 335px;
+  margin-bottom: 40px;
 }
 
 .order-form {
@@ -77,19 +83,28 @@
   fill: #ecd979;
 }
 
+.order-banner-bottom {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
-  .container {
+  .order-container {
     max-width: 768px;
-    padding-top: 100px;
     padding-left: 32px;
+  }
+
+  .order-banner-top {
+    margin-bottom: 100px;
+    width: 768px;
+    height: 776px;
+    background-size: auto;
+    background-position: center;
+    background-image: url(../img/tablet/Order/order-girlingreen-tab1x.jpg);
   }
 
   .order-title {
     max-width: 542px;
     margin: 0 auto 40px 0;
-    font-size: 44px;
-    line-height: 1.32;
-    letter-spacing: -1.32px;
   }
 
   .order-form {
@@ -101,5 +116,41 @@
     align-self: start;
     margin: 0;
     margin-bottom: 100px;
+  }
+
+  .order-banner-bottom {
+    position: relative;
+    width: 768px;
+    height: 638px;
+    background-image: url(../img/tablet/Order/order-elements-tab1x.png);
+    background-repeat: no-repeat;
+    background-position: right 433px top 116px;
+    background-size: auto;
+    display: block;
+  }
+
+  .order-picture-bottom {
+    position: absolute;
+    top: 0;
+    left: 98px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    .order-container {
+      max-width: 1280px;
+      padding-left: 64px;
+    }
+
+    .order-banner-top {
+      margin-bottom: 150px;
+      width: 1282px;
+      height: 776px;
+      background-size: auto;
+      background-position: center;
+      background-image: url(../img/desktop/Order/order-girlingreen-desk1x.jpg);
+    }
+    .order-form {
+      margin: 0 0 34px 0;
+    }
   }
 }
