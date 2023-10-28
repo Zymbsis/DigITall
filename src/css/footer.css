@@ -1,8 +1,11 @@
 .footer {
-    background: #2E2F42;
+    border-top: 1px solid rgba(252, 249, 249, 0.10);
+    width: 375px;
+    height: 649px;
+    flex-shrink: 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../img/mobile/Footer/footer-elements-mob1x.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
 }
 
@@ -10,7 +13,12 @@
 
 .footer-nav {}
 
-.footer-nav-list {}
+.footer-nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
 
 .footer-nav-item {}
 
