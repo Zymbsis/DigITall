@@ -1,1 +1,42 @@
 /* Тут будуть утиліти */
+body {
+  font-family: "Manrope", sans-serif;
+  color: #FCF9F9;
+  background-color: #1C2225;
+}
+
+/* main-title+slogan */
+.slogan {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.22;
+  letter-spacing: -0.03em;
+}
+
+.slogan span {
+  color: #ECD979;
+}
+
+/* section-title (About Us, Our collection, Your order, Testimonials) */
+.section-title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.37;
+  letter-spacing: -0.03em;
+}
+
+.section-title span {
+  color: #ECD979;
+}
+
+/* paragraph (section "About us", section "Testimonials") */
+.text {
+  color: rgba(252, 249, 249, 0.40);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-section .text {
+  letter-spacing: 0.05em;
+}
