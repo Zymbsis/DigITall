@@ -1,6 +1,6 @@
 <section class="order-section">
   <div class="order-banner-top"></div>
-  <div class="order-container">
+  <div class="order-container container">
     <h2 class="section-title order-title">
       <span>Your order </span>is our priority: Personalized approach and quality
       of service
@@ -50,13 +50,25 @@
   </div>
   <div class="order-banner-bottom">
     <picture class="order-picture-bottom">
-      <!-- <source
-                srcset="../img/tablet/Order/"
-                media="(min-width:190px)"
-              /> -->
+      <source
+        srcset="
+          ./img/desktop/Order/order-girl-desk1x.jpg 1x,
+          ./img/desktop/Order/order-girl-desk2x.jpg 2x,
+          ./img/desktop/Order/order-girl-desk3x.jpg 3x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ../img/tablet/Order/order-girl-tab1x.jpg 1x,
+          ../img/tablet/Order/order-girl-tab2x.jpg 2x,
+          ../img/tablet/Order/order-girl-tab3x.jpg 3x
+        "
+        media="(min-width: 768px)"
+      />
       <img
         src="./img/tablet/Order/order-girl-tab1x.jpg"
-        alt="embriodered shirt and waistcoat"
+        alt="Embriodered waistcoat and shirt"
         width="638"
         height="521"
       />
