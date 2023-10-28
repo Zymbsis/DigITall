@@ -1,0 +1,31 @@
+.collection{
+    background-image: url();
+    background: #1C2225;
+}
+.collection-title{
+text-align: center;
+margin-bottom: 40px;
+}
+
+.collection-list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: ;
+    column-gap: ;
+}
+.collection-item{
+
+}
+.collection-item-div{
+    
+}
+.collection-subtitle{
+color: #FCF9F9;
+font-weight: 500;
+line-height: 1.0;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+}
+.collection-text{
+color: rgba(252, 249, 249, 0.40);
+}
