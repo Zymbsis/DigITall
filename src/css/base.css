@@ -1,7 +1,7 @@
 body {
-  font-family: "Manrope", sans-serif;
-  color: #FCF9F9;
-  background-color: #1C2225;
+    font-family: "Manrope", sans-serif;
+    color: #FCF9F9;
+    background-color: #1C2225;
 }
 
 .section {
@@ -10,44 +10,44 @@ body {
 }
 
 .container {
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
 }
 
 /* main-title+slogan (sections "Hero", "Footer"*/
 .slogan {
-  font-size: 44px;
-  line-height: 1.23;
-  letter-spacing: -0.03em;
+    font-size: 44px;
+    line-height: 1.23;
+    letter-spacing: -0.03em;
 }
 
 .slogan span {
-  color: #ECD979;
+    color: #ECD979;
 }
 
 /* section-title (sections "About Us", "Our collection", "Your order", "Testimonials") */
 .section-title {
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 1.37;
-  letter-spacing: -0.03em;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.37;
+    letter-spacing: -0.03em;
 }
 
 .section-title span {
-  color: #ECD979;
+    color: #ECD979;
 }
 
 /* paragraph (sections "About us", section "Testimonials") */
 .text {
-  color: rgba(252, 249, 249, 0.40);
-  font-size: 14px;
-  line-height: normal;
+    color: rgba(252, 249, 249, 0.40);
+    font-size: 14px;
+    line-height: normal;
 }
 
 .about-section .text {
-  letter-spacing: 0.05em;
+    letter-spacing: 0.05em;
 }
 
 /* navigation-link (sections "Header", "Footer") */
@@ -89,20 +89,20 @@ body {
     padding-right: 32px;
   }
 
-  .slogan {
-    font-size: 54px;
-    line-height: 1.19;
-  }
+    .slogan {
+        font-size: 54px;
+        line-height: 1.19;
+    }
 
-  .section-title {
-    font-size: 44px;
-    font-weight: 500;
-    line-height: 1.45;
-  }
+    .section-title {
+        font-size: 44px;
+        font-weight: 500;
+        line-height: 1.45;
+    }
 
-  .text {
-    font-size: 16px;
-  }
+    .text {
+        font-size: 16px;
+    }
 
   .about-section .text {
     letter-spacing: 0.04em;
@@ -125,8 +125,8 @@ body {
     padding-right: 100px;
   }
 
-  .slogan {
-    font-size: 64px;
-    line-height: 1.16;
-  }
+    .slogan {
+        font-size: 64px;
+        line-height: 1.16;
+    }
 }
