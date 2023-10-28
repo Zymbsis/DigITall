@@ -75,9 +75,17 @@
 
     .testimonials-container {}
 
-    .testimonials-list {}
+    .testimonials-list {
+        column-gap: 26px;
+    }
 
-    .testimonials-item {}
+    .testimonials-item:nth-child(3) {
+        display: block;
+    }
+
+    .testimonials-item {
+        flex-basis: calc((100% - 2 * 26px) / 3);
+    }
 
     .testimonials-image {}
 
