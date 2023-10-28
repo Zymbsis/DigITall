@@ -62,6 +62,24 @@ body {
   color: #ECD979;
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  height: 49px;
+  padding: 13px 35px;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.10);
+  background-color: transparent;
+  color: #FCF9F9;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 768px) {
   .section {
     padding-top: 50px;
