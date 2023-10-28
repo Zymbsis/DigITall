@@ -4,6 +4,11 @@ body {
     background-color: #1C2225;
 }
 
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .container {
     max-width: 375px;
     padding-left: 20px;
@@ -58,11 +63,16 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
     .slogan {
         font-size: 54px;
@@ -85,11 +95,16 @@ body {
 }
 
 @media screen and (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
+  .section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .container {
+    max-width: 1280px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 
     .slogan {
         font-size: 64px;
