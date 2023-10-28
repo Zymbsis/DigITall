@@ -1,8 +1,14 @@
-/* Тут будуть утиліти */
 body {
   font-family: "Manrope", sans-serif;
   color: #FCF9F9;
   background-color: #1C2225;
+}
+
+.container {
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
 /* main-title+slogan */
