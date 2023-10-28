@@ -68,7 +68,8 @@ body {
   gap: 10px;
   margin: 0 auto;
   height: 49px;
-  padding: 13px 35px;
+  padding-left: 35px;
+  padding-right: 35px;
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.10);
   background-color: transparent;
