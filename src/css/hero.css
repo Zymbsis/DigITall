@@ -11,21 +11,7 @@
 }
 
 .hero-button {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  height: 49px;
-  padding: 13px 35px;
-  gap: 10px;
-  border-radius: 15px;
-  border: 1px solid rgba(252, 249, 249, 0.10);
-  background-color: transparent;
-  color: #FCF9F9;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 .hero-button-icon {
