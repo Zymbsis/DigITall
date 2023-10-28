@@ -1,0 +1,27 @@
+.footer {}
+
+.container {}
+
+.footer-nav {}
+
+.footer-nav-list {}
+
+.footer-nav-item {}
+
+.footer-nav-link {}
+
+.footer-slogan-text {
+    color: #FCF9F9;
+    font-size: 44px;
+    line-height: 1.23;
+    /* 122.727% */
+    letter-spacing: -0.03em;
+}
+
+.footer-slogan-word {
+    color: #ECD979;
+    font-family: Manrope;
+    font-size: 44px;
+    line-height: 54px;
+    letter-spacing: -0.03em;
+}
