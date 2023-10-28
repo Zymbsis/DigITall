@@ -1,9 +1,8 @@
 .collection{
     background-image: url(../img/mobile/Collection/collection-elements-mob1x.png);
     background-repeat: no-repeat;
-    background-position: 0 250px; 
+    background-position: 0 220px; 
     background-size: 72px 177px;
-    /* background-size: 199px 177px;  */
     /* background: #1C2225; */
 }
 
@@ -51,6 +50,7 @@ screen and (min-resolution: 2dppx),
 screen and (min-device-pixel-ratio: 2) {
 .collection{
     background-image: url(../img/mobile/Collection/collection-elements-mob2x.png);
+
 }}
 @media screen and (min-resolution: 288dpi),
     screen and (min-resolution: 3dppx),
@@ -64,10 +64,19 @@ screen and (min-device-pixel-ratio: 2) {
         max-width: 100%;
     flex-basis: calc((100% - 20px) / 2);
     }
+    .collection{
+        background-size: 114px 300px;
+        background-position: 0 150px; 
+    }
 }
 @media screen and (min-width: 1158px) {
     .collection-item{
         max-width: 100%;
     flex-basis: calc((100% - 40px) / 3);
+    }
+    .collection{
+        background-image: url(../img/desktop/Collection/collection-elements-desk1x.png);
+        background-size: 169px 300px;
+        background-position: 0px 150px; 
     }
 }
