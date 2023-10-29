@@ -11,7 +11,14 @@
 }
 
 .hero-button-link {
-  display: flex;
+  padding: 14px 36px;
+  text-align: center;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.10);
+  /* display: inline-flex;
+  min-width: 155px;
+  justify-content: center;
   margin-bottom: 40px;
   text-align: center;
   padding: 14px 36px;
@@ -23,7 +30,7 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
   border-radius: 15px;
-  border: 1px solid rgba(252, 249, 249, 0.10);
+  border: 1px solid rgba(252, 249, 249, 0.10); */
 }
 
 .hero-button-icon {
