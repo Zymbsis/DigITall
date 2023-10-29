@@ -1,9 +1,8 @@
 .collection{
     background-image: url(../img/mobile/Collection/collection-elements-mob1x.png);
     background-repeat: no-repeat;
-    background-position: 0 220px; 
+    background-position: 0 225px; 
     background-size: 72px 177px;
-    /* background: #1C2225; */
 }
 
 .collection-title{
@@ -17,11 +16,14 @@ margin-bottom: 40px;
     gap: 20px;
 }
 .collection-item{
-
+    width: 100%;
+    max-width: 335px; 
 }
 .collection-item-div{
-
+width: 100%;
+max-width: 335px;
 }
+
 .collection-img{
     border-radius: 4px;
     margin-bottom: 18px;
@@ -34,6 +36,10 @@ letter-spacing: 0.05em;
 text-transform: uppercase;
 margin-bottom: 8px;
 font-size: 14px;
+
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
 }
 .collection-text{
 color: rgba(252, 249, 249, 0.40);
@@ -66,10 +72,15 @@ screen and (min-device-pixel-ratio: 2) {
     }
     .collection{
         background-size: 114px 300px;
-        background-position: 0 150px; 
+        background-position: -5px 150px; 
     }
-}
-@media screen and (min-width: 1158px) {
+    .collection-subtitle{
+        font-size: 18px;
+    }
+    .collection-text{
+        font-size: 18px;
+}}
+@media screen and (min-width: 1280px) {
     .collection-item{
         max-width: 100%;
     flex-basis: calc((100% - 40px) / 3);
@@ -78,5 +89,8 @@ screen and (min-device-pixel-ratio: 2) {
         background-image: url(../img/desktop/Collection/collection-elements-desk1x.png);
         background-size: 169px 300px;
         background-position: 0px 150px; 
+    }
+    .collection-list{
+        gap: 40px 20px;
     }
 }
