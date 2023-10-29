@@ -1,11 +1,3 @@
-.hero-section {}
-
-.container {}
-
-.hero-container {}
-
-.slogan {}
-
 .hero-title {
   margin-bottom: 20px;
 }
@@ -64,4 +56,67 @@
   }
 }
 
-.hero-photo {}
+.hero-hand-made {
+  display: none;
+}
+
+.ukraine {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    position: relative;
+  }
+
+  .hero-title {
+    max-width: 549px;
+    margin-bottom: 40px;
+  }
+
+  .hero-anchor-link {
+    margin-left: 141px;
+    padding-left: 39px;
+    padding-right: 39px;
+    font-size: 16px;
+  }
+
+  .hero-hand-made {
+    position: absolute;
+    top: -26px;
+    right: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    max-width: 115px;
+  }
+
+  .hand-made-text {
+    color: rgba(252, 249, 249, 0.40);
+    text-align: center;
+    line-height: normal;
+    letter-spacing: -0.04em;
+  }
+
+  .ukraine {
+    display: block;
+    position: absolute;
+    bottom: -98.5px;
+    right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .hero-title {
+    max-width: 518px;
+  }
+}

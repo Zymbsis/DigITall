@@ -1,15 +1,18 @@
 <section class="section hero-section">
   <div class="container hero-container">
-    <h1 class="slogan hero-title">
-      Reviving the traditional <span>Ukrainian</span> artistry in every stitch.
-    </h1>
+    <div class="hero-content">
+      <h1 class="slogan hero-title">
+        Reviving the traditional <span>Ukrainian</span> artistry in every
+        stitch.
+      </h1>
 
-    <a class="hero-anchor-link" href="#order">
-      Order
-      <svg class="hero-anchor-icon" width="26" height="10">
-        <use href="./img/icons.svg#arrow"></use>
-      </svg>
-    </a>
+      <a class="hero-anchor-link" href="#order">
+        Order
+        <svg class="hero-anchor-icon" width="26" height="10">
+          <use href="./img/icons.svg#arrow"></use>
+        </svg>
+      </a>
+    </div>
 
     <picture>
       <source
@@ -44,15 +47,32 @@
         height="545"
       />
     </picture>
-    <div>
+    <div class="hero-hand-made">
       <img
-        class=""
-        srcset="../ 1x, ./images/our-team/our-team-3-2x.jpg 2x"
-        src="../img/desktop/Hero/"
-        alt="Camila Garcia"
-        width="264"
-        height="260"
+        class="hand-made-symbol"
+        srcset="
+          ./img/tablet/Hero/star-tab-desk1x.png 1x,
+          ./img/tablet/Hero/star-tab-desk2x.png 2x,
+          ./img/tablet/Hero/star-tab-desk3x.png 3x
+        "
+        src="./img/tablet/Hero/star-tab-desk1x.png"
+        alt="Star symbol"
+        width="49"
+        height="49"
       />
+      <p class="hand-made-text">all embroidery is made by hand</p>
     </div>
+    <img
+      class="ukraine"
+      srcset="
+        ./img/tablet/Hero/hero-group-tab1x.png 1x,
+        ./img/tablet/Hero/hero-group-tab2x.png 2x,
+        ./img/tablet/Hero/hero-group-tab3x.png 3x
+      "
+      src="./img/tablet/Hero/hero-group-tab1x.png"
+      alt="Map of Ukraine"
+      width="139"
+      height="197"
+    />
   </div>
 </section>
