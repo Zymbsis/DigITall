@@ -113,10 +113,19 @@
     flex-direction: row-reverse;
     gap: 40px;
     justify-content: flex-end;
-    align-items: center;
   }
 
   .hero-title {
+    padding-top: 94px;
     max-width: 518px;
+  }
+
+  .hero-hand-made {
+    top: 14px;
+    right: 100px;
+  }
+
+  .ukraine {
+    right: 100px;
   }
 }
