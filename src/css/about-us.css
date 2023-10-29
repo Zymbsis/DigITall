@@ -44,8 +44,8 @@
       }
     }
     border-radius: 4px;
-    background-size: 459px 408px;
-    background-position: 105px 153px;
+    /* background-size: 459px 408px;
+    background-position: 105px 153px; */
   }
 
   @media screen and (min-width: 768px) {
