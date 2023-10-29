@@ -116,7 +116,7 @@
   background-size: contain;
   background-position-y: bottom;
   overflow: hidden;
-  transform: translatex(100%);
+  /* transform: translatex(100%); */
 }
 
 @media (min-device-pixel-ratio: 2),
