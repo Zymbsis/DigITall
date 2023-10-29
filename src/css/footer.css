@@ -1,5 +1,5 @@
 .footer {
-    padding-top: 40px;
+
     border-top: 1px solid rgba(252, 249, 249, 0.10);
 }
 
@@ -16,15 +16,16 @@
 }
 
 .footer-container {
-    padding-bottom: 292px;
     background-image: url(../img/mobile/Footer/footer-elements-mob1x.png);
     background-position-y: bottom;
-    /* background-position-x: center; */
     background-repeat: no-repeat;
     background-size: 375px 212px;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    padding-top: 40px;
+    /* Відштовхує й прибиває фонове зображення до низу футера */
+    padding-bottom: 292px;
 }
 
 .footer-nav-list {
@@ -33,9 +34,6 @@
     flex-wrap: wrap;
 }
 
-/* display: inline-flex;
-align-items: flex-start;
-gap: 25px; */
 .footer-nav-item {
     flex-basis: calc((100% - 40px) / 2);
 }
@@ -43,9 +41,12 @@ gap: 25px; */
 @media screen and (min-width: 768px) {
     .footer-container {
         background-image: url(../img/tablet/Footer/footer-elements-tab1x.png);
+        /* прибиваю до правого верхнього краю footer-container */
         background-position-x: right;
+        background-position-y: 0;
         background-size: 174px 370px;
         padding-right: 215px;
+        row-gap: 80px;
     }
 
     @media screen and (min-resolution: 192dpi) {
@@ -63,6 +64,7 @@ gap: 25px; */
     .footer-nav-list {
         gap: 25px;
         justify-content: flex-start;
+
     }
 
     .footer-nav-item {
@@ -75,7 +77,9 @@ gap: 25px; */
         background-image: url(../img/desktop/Footer/footer-elements-desk1x.png);
         background-position-x: right;
         background-size: 336px 363px;
-        padding-right: 426qpx;
+        padding-right: 426px;
+        /* padding-left: 100px; */
+        row-gap: 80px;
     }
 
     @media screen and (min-resolution: 192dpi) {
