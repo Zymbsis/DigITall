@@ -5,21 +5,6 @@
 }
 
 .about-container {
-  background-image: url(../img/mobile/About/aboutus-elements-mob1x.png);
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .order-container {
-    background-image: url(../img/mobile/About/aboutus-elements-mob2x.png);
-  }
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 216dpi),
-    (min-resolution: 3dppx) {
-    .order-container {
-      background-image: url(../img/mobile/About/aboutus-elements-mob3x.png);
-    }
-  }
   .section-title {
     margin-bottom: 40px;
   }
@@ -42,24 +27,43 @@
   }
 
   .about-image {
+    width: 335px;
+    background-image: url(../img/mobile/About/aboutus-elements-mob1x.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .about-image {
+      background-image: url(../img/mobile/About/aboutus-elements-mob2x.png);
+    }
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 216dpi),
+      (min-resolution: 3dppx) {
+      .about-image {
+        background-image: url(../img/mobile/About/aboutus-elements-mob3x.png);
+      }
+    }
     border-radius: 4px;
+    background-size: 459px 408px;
+    background-position: 105px 153px;
   }
 
   @media screen and (min-width: 768px) {
-    .about-container {
+    .about-image {
+      width: 704px;
       background-image: url(../img/tablet/About/aboutus-elements-tab1x.png);
     }
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      .order-container {
+      .about-image {
         background-image: url(../img/tablet/About/aboutus-elements-tab2x.png);
       }
     }
     @media (min-device-pixel-ratio: 3),
       (min-resolution: 216dpi),
       (min-resolution: 3dppx) {
-      .order-container {
+      .about-image {
         background-image: url(../img/tablet/About/aboutus-elements-tab3x.png);
       }
     }
@@ -71,24 +75,22 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .about-container {
+  .about-image {
+    width: 594px;
     background-image: url(../img/desktop/About/aboutus-elements-desk1x.png);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .order-container {
+    .about-image {
       background-image: url(../img/desktop/About/aboutus-elements-desk2x.png);
     }
   }
   @media (min-device-pixel-ratio: 3),
     (min-resolution: 216dpi),
     (min-resolution: 3dppx) {
-    .order-container {
+    .about-image {
       background-image: url(../img/desktop/About/aboutus-elements-desk3x.png);
     }
-  }
-
-  .about-container {
   }
 }
