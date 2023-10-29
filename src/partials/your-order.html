@@ -1,77 +1,78 @@
 <section class="order-section">
-  <div class="order-banner-top"></div>
   <div class="order-container container">
-    <h2 class="section-title order-title">
-      <span>Your order </span>is our priority: Personalized approach and quality
-      of service
-    </h2>
-    <form class="order-form" name="orderform" autocomplete="off">
-      <div class="interactive-input">
-        <input
-          class="form-input"
-          type="text"
-          name="user-name"
-          id="user-name"
-          placeholder=""
-          required
-          minlength="3"
-        />
-        <label class="form-label" for="user-name">Enter your full name</label>
-      </div>
-      <div class="interactive-input">
-        <input
-          class="form-input"
-          type="email"
-          name="email"
-          id="user-email"
-          placeholder=""
-          required
-        />
-        <label class="form-label" for="user-email">Enter your email</label>
-      </div>
-      <div class="interactive-input">
-        <textarea
-          class="textarea"
-          name="user-comment"
-          id="user-comment"
-          placeholder=""
-        ></textarea>
-        <label class="form-label" for="user-comment">Comments</label>
-      </div>
-      <button type="submit" class="order-button">
-        <span class="button-text">send</span>
-        <div class="button-icon">
-          <svg width="27" height="10">
-            <use href="../img/icons.svg#arrow"></use>
-          </svg>
+    <div>
+      <h2 class="section-title order-title">
+        <span>Your order </span>is our priority: Personalized approach and
+        quality of service
+      </h2>
+      <form class="order-form" name="orderform" autocomplete="off">
+        <div class="interactive-input">
+          <input
+            class="form-input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder=""
+            required
+            minlength="3"
+          />
+          <label class="form-label" for="user-name">Enter your full name</label>
         </div>
-      </button>
-    </form>
-  </div>
-  <div class="order-banner-bottom">
-    <picture class="order-picture-bottom">
-      <source
-        srcset="
-          ./img/desktop/Order/order-girl-desk1x.jpg 1x,
-          ./img/desktop/Order/order-girl-desk2x.jpg 2x,
-          ./img/desktop/Order/order-girl-desk3x.jpg 3x
-        "
-        media="(min-width: 1280px)"
-      />
-      <source
-        srcset="
-          ../img/tablet/Order/order-girl-tab1x.jpg 1x,
-          ../img/tablet/Order/order-girl-tab2x.jpg 2x,
-          ../img/tablet/Order/order-girl-tab3x.jpg 3x
-        "
-        media="(min-width: 768px)"
-      />
-      <img
-        src="./img/tablet/Order/order-girl-tab1x.jpg"
-        alt="Embriodered waistcoat and shirt"
-        width="638"
-        height="521"
-      />
-    </picture>
+        <div class="interactive-input">
+          <input
+            class="form-input"
+            type="email"
+            name="email"
+            id="user-email"
+            placeholder=""
+            required
+          />
+          <label class="form-label" for="user-email">Enter your email</label>
+        </div>
+        <div class="interactive-input">
+          <textarea
+            class="textarea"
+            name="user-comment"
+            id="user-comment"
+            placeholder=""
+          ></textarea>
+          <label class="form-label" for="user-comment">Comments</label>
+        </div>
+        <button type="submit" class="order-button">
+          <span class="button-text">send</span>
+          <div class="button-icon">
+            <svg width="27" height="10">
+              <use href="../img/icons.svg#arrow"></use>
+            </svg>
+          </div>
+        </button>
+      </form>
+    </div>
+    <div class="order-ornament">
+      <picture class="order-picture-bottom">
+        <source
+          srcset="
+            ./img/desktop/Order/order-girl-desk1x.jpg 1x,
+            ./img/desktop/Order/order-girl-desk2x.jpg 2x,
+            ./img/desktop/Order/order-girl-desk3x.jpg 3x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/tablet/Order/order-girl-tab1x.jpg 1x,
+            ./img/tablet/Order/order-girl-tab2x.jpg 2x,
+            ./img/tablet/Order/order-girl-tab3x.jpg 3x
+          "
+          media="(min-width: 768px)"
+        />
+        <img
+          src="./img/tablet/Order/order-girl-tab1x.jpg"
+          alt="Embriodered waistcoat and shirt"
+          width="638"
+          height="521"
+        />
+      </picture>
+    </div>
   </div>
 </section>

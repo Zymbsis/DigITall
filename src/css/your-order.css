@@ -1,18 +1,20 @@
-.order-banner-top {
-  margin: 0 auto;
-  margin-bottom: 80px;
-  width: 375px;
-  height: 550px;
+.order-section {
+  display: flex;
+  flex-direction: column;
+}
+.order-container {
+  width: 100%;
+  padding-top: 630px;
   background-image: url(../img/mobile/Order/order-girlingreen-mob1x.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: top 0 center;
+  background-size: auto;
 }
 
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .order-banner-top {
+  .order-container {
     background-image: url(../img/mobile/Order/order-girlingreen-mob2x.jpg);
   }
 }
@@ -20,13 +22,9 @@
 @media (min-device-pixel-ratio: 3),
   (min-resolution: 288dpi),
   (min-resolution: 3dppx) {
-  .order-banner-top {
+  .order-container {
     background-image: url(../img/mobile/Order/order-girlingreen-mob3x.jpg);
   }
-}
-
-.order-container {
-  margin: 0 auto;
 }
 
 .order-title {
@@ -38,7 +36,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
   max-width: 335px;
   flex-direction: column;
   /* justify-content: center; */
@@ -48,13 +45,12 @@
 
 .form-input {
   width: 100%;
-  /* max-width: 335px; */
-  padding: 14px 16px;
+  padding: 12px 16px;
   align-items: flex-start;
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
   background-color: transparent;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #fcf9f9;
   font-family: inherit;
   font-size: 16px;
@@ -87,21 +83,21 @@
 .form-input:not(:placeholder-shown) ~ .form-label,
 .textarea:not(:placeholder-shown) ~ .form-label {
   color: #ecd979;
-  top: -6px;
+  top: -5px;
   left: 8px;
   transform: translateY(-100%);
-  transition: all, 0.3s;
+  transition: all 300ms ease-in-out;
 }
 
 .textarea {
   width: 100%;
-  height: 180px;
+  height: 160px;
   resize: none;
   background-color: transparent;
   padding: 14px 16px;
   border-radius: 8px;
   border: 1px solid rgba(252, 249, 249, 0.1);
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   outline: none;
   color: #fcf9f9;
   font-family: inherit;
@@ -166,6 +162,10 @@
   }
 }
 
+.order-picture-bottom {
+  display: none;
+}
+
 .order-banner-bottom {
   display: none;
 }
@@ -174,30 +174,21 @@
 
 @media screen and (min-width: 768px) {
   .order-container {
-    max-width: 768px;
-    padding-left: 32px;
-  }
-
-  .order-banner-top {
-    margin-bottom: 100px;
-    width: 768px;
-    height: 776px;
-    background-size: auto;
-    background-position: center;
+    padding-top: 876px;
     background-image: url(../img/tablet/Order/order-girlingreen-tab1x.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .order-banner-top {
+    .order-container {
       background-image: url(../img/tablet/Order/order-girlingreen-tab2x.jpg);
     }
 
     @media (min-device-pixel-ratio: 3),
       (min-resolution: 288dpi),
       (min-resolution: 3dppx) {
-      .order-banner-top {
+      .order-container {
         background-image: url(../img/tablet/Order/order-girlingreen-tab3x.jpg);
       }
     }
@@ -215,43 +206,40 @@
 
   .order-button {
     align-self: start;
-    margin: 0;
-    margin-bottom: 100px;
+    margin: 0 0 100px 0;
   }
 
-  .order-banner-bottom {
-    position: relative;
-    margin: 0 auto;
-    width: 768px;
-    height: 638px;
+  .order-picture-bottom {
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    left: auto;
+    right: 0;
+  }
+
+  .order-ornament {
+    display: block;
     background-image: url(../img/tablet/Order/order-elements-tab1x.png);
     background-repeat: no-repeat;
-    overflow: hidden;
-    background-position: right 433px top 116px;
+    background-position: top 116px left 0px;
     background-size: auto;
-    display: block;
+    padding-bottom: 79px;
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .order-banner-top {
-      background-image: url(../img/tablet/Order/order-girl-tab2x.jpg);
+    .order-ornament {
+      background-image: url(../img/tablet/Order/order-elements-tab2x.png);
     }
 
     @media (min-device-pixel-ratio: 3),
       (min-resolution: 288dpi),
       (min-resolution: 3dppx) {
-      .order-banner-top {
-        background-image: url(../img/tablet/Order/order-girl-tab3x.jpg);
+      .order-ornament {
+        background-image: url(../img/tablet/Order/order-elements-tab3x.png);
       }
     }
-  }
-
-  .order-picture-bottom {
-    position: absolute;
-    top: 0;
-    left: 98px;
   }
 }
 
@@ -259,23 +247,18 @@
 
 @media screen and (min-width: 1280px) {
   .order-container {
-    max-width: 1280px;
-    padding-left: 64px;
-  }
-
-  .order-banner-top {
-    margin-bottom: 150px;
-    width: 1282px;
-    height: 776px;
-    background-size: auto;
-    background-position: center;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    width: 100%;
+    padding-top: 926px;
     background-image: url(../img/desktop/Order/order-girlingreen-desk1x.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .order-banner-top {
+    .order-container {
       background-image: url(../img/desktop/Order/order-girlingreen-desk2x.jpg);
     }
   }
@@ -283,40 +266,50 @@
   @media (min-device-pixel-ratio: 3),
     (min-resolution: 288dpi),
     (min-resolution: 3dppx) {
-    .order-banner-top {
+    .order-container {
       background-image: url(../img/desktop/Order/order-girlingreen-desk3x.jpg);
     }
   }
 
   .order-form {
-    margin: 0 0 34px 0;
+    margin: 0 0 0 0;
   }
 
-  .order-picture-bottom {
-    position: absolute;
-    top: 0;
-    left: 98px;
+  .order-button {
+    margin: 0 0 0 0;
   }
 
-  .order-banner-bottom {
-    width: 768px;
-    height: 638px;
+  .order-ornament {
+    max-height: 640px;
     background-image: url(../img/desktop/Order/order-elements-desk1x.png);
+    overflow: visible;
+    background-position: top 156px right 300px;
+    background-size: auto;
+    padding-bottom: 119px;
+    left: -64px;
+    bottom: 0;
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .order-banner-top {
+    .order-ornament {
       background-image: url(../img/desktop/Order/order-elements-desk2x.png);
     }
 
     @media (min-device-pixel-ratio: 3),
       (min-resolution: 288dpi),
       (min-resolution: 3dppx) {
-      .order-banner-top {
+      .order-ornament {
         background-image: url(../img/desktop/Order/order-elements-desk3x.png);
       }
     }
+  }
+
+  .order-picture-bottom {
+    margin-bottom: 0;
+    width: 524px;
+    /* top: 0;
+    left: 0px; */
   }
 }
