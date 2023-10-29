@@ -62,7 +62,7 @@ body {
   color: #ECD979;
 }
 
-.button {
+/* .button {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -76,8 +76,7 @@ body {
   line-height: normal;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-}
-
+} */
 @media screen and (min-width: 768px) {
   .section {
     padding-top: 50px;
@@ -109,9 +108,9 @@ body {
     letter-spacing: 0.04em;
   }
 
-  .button {
+  /* .button {
     font-size: 16px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1280px) {
