@@ -18,6 +18,7 @@ body {
 
 /* main-title+slogan (sections "Hero", "Footer"*/
 .slogan {
+  font-weight: 400;
   font-size: 44px;
   line-height: 1.23;
   letter-spacing: -0.03em;
