@@ -4,25 +4,22 @@
   align-items: flex-start;
   gap: 50px;
 }
-.section {
+.about-section {
   background-size: 250px 408px;
   background-repeat: no-repeat;
-  /* background-position: 105px 611px; */
-  background-position-x: right;
-  background-position-y: bottom;
-
+  background-position: right bottom -22px;
   background-image: url(../img/mobile/About/aboutus-elements-mob1x.png);
 }
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
+  (min-resolution: 144dpi),
   (min-resolution: 2dppx) {
-  .section {
+  .about-section {
     background-image: url(../img/mobile/About/aboutus-elements-mob2x.png);
   }
   @media (min-device-pixel-ratio: 3),
     (min-resolution: 216dpi),
     (min-resolution: 3dppx) {
-    .section {
+    .about-section {
       background-image: url(../img/mobile/About/aboutus-elements-mob3x.png);
     }
   }
@@ -35,16 +32,6 @@
   margin-bottom: 20px;
 }
 
-.about-text {
-  color: rgba(252, 249, 249, 0.4);
-  font-family: Manrope;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.04em;
-}
-
 .about-image {
   border-radius: 4px;
   /* width: 335px; */
@@ -55,21 +42,21 @@
     gap: 40px;
   }
 
-  .section {
+  .about-section {
     background-size: 250px 408px;
     background-image: url(../img/tablet/About/aboutus-elements-tab1x.png);
   }
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
+    (min-resolution: 144dpi),
     (min-resolution: 2dppx) {
-    .section {
+    .about-section {
       background-image: url(../img/tablet/About/aboutus-elements-tab2x.png);
     }
   }
   @media (min-device-pixel-ratio: 3),
     (min-resolution: 216dpi),
     (min-resolution: 3dppx) {
-    .section {
+    .about-section {
       background-image: url(../img/tablet/About/aboutus-elements-tab3x.png);
     }
   }
@@ -83,21 +70,21 @@
   .about-text-container {
     max-width: 436px;
   }
-  .section {
+  .about-section {
     background-size: 545px 484px;
     background-image: url(../img/desktop/About/aboutus-elements-desk1x.png);
   }
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
+    (min-resolution: 144dpi),
     (min-resolution: 2dppx) {
-    .section {
+    .about-section {
       background-image: url(../img/desktop/About/aboutus-elements-desk2x.png);
     }
   }
   @media (min-device-pixel-ratio: 3),
     (min-resolution: 216dpi),
     (min-resolution: 3dppx) {
-    .section {
+    .about-section {
       background-image: url(../img/desktop/About/aboutus-elements-desk3x.png);
     }
   }
