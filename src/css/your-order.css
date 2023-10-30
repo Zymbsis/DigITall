@@ -60,8 +60,11 @@
 }
 
 .form-input:hover,
+.textarea:hover {
+  border: 1px solid rgba(252, 249, 249, 0.6);
+}
+
 .form-input:focus,
-.textarea:hover,
 .textarea:focus {
   border: 1px solid #ecd979;
 }
@@ -141,10 +144,10 @@
 }
 
 .order-button:hover .button-icon {
-  animation: 3s linear running rotation;
+  animation: 3s linear running rotation-trick;
 }
 
-@keyframes rotation {
+@keyframes rotation-trick {
   0% {
     transform: rotate(330deg);
   }
@@ -173,6 +176,29 @@
 /* TABLET STYLES   TABLET STYLES  TABLET STYLES */
 
 @media screen and (min-width: 768px) {
+  .order-section {
+    background-image: url(../img/tablet/Order/order-elements-tab1x.png);
+    background-repeat: no-repeat;
+    background-size: 322px 483px;
+    background-position-y: bottom;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .order-section {
+      background-image: url(../img/tablet/Order/order-elements-tab2x.png);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    .order-section {
+      background-image: url(../img/tablet/Order/order-elements-tab3x.png);
+    }
+  }
+
   .order-container {
     padding-top: 876px;
     background-image: url(../img/tablet/Order/order-girlingreen-tab1x.jpg);
@@ -184,13 +210,13 @@
     .order-container {
       background-image: url(../img/tablet/Order/order-girlingreen-tab2x.jpg);
     }
+  }
 
-    @media (min-device-pixel-ratio: 3),
-      (min-resolution: 288dpi),
-      (min-resolution: 3dppx) {
-      .order-container {
-        background-image: url(../img/tablet/Order/order-girlingreen-tab3x.jpg);
-      }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    .order-container {
+      background-image: url(../img/tablet/Order/order-girlingreen-tab3x.jpg);
     }
   }
 
@@ -212,50 +238,33 @@
   .order-picture-bottom {
     display: flex;
     justify-content: flex-end;
-  }
-
-  .order-picture-bottom img {
-    /* height: initial; */
     margin-bottom: 79px;
-  }
-
-  .ornament-wrap {
-    position: relative;
-  }
-
-  .ornament-wrap::after {
-    width: 100%;
-    height: 484px;
-    position: absolute;
-    content: '';
-    background-image: url(../img/tablet/Order/order-elements-tab1x.png);
-    background-repeat: no-repeat;
-    /* background-position: top 116px right 96px; */
-    /* background-size: auto; */
-    bottom: 0;
-    left: 0;
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .order-ornament {
-      background-image: url(../img/tablet/Order/order-elements-tab2x.png);
-    }
-
-    @media (min-device-pixel-ratio: 3),
-      (min-resolution: 288dpi),
-      (min-resolution: 3dppx) {
-      .order-ornament {
-        background-image: url(../img/tablet/Order/order-elements-tab3x.png);
-      }
-    }
   }
 }
 
 /* DESCTOP STYLES  DESCTOP STYLES  DESCTOP STYLES */
 
 @media screen and (min-width: 1280px) {
+  .order-section {
+    background-image: url(../img/desktop/Order/order-elements-desk1x.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .order-section {
+      background-image: url(../img/desktop/Order/order-elements-desk2x.png);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    .order-section {
+      background-image: url(../img/desktop/Order/order-elements-desk3x.png);
+    }
+  }
+
   .order-container {
     display: flex;
     flex-direction: row-reverse;
@@ -289,43 +298,13 @@
     margin: 0 0 0 0;
   }
 
-  .order-ornament {
-    max-height: 640px;
-    background-image: url(../img/desktop/Order/order-elements-desk1x.png);
-    background-position: top 156px right 300px;
-    background-size: auto;
-    padding-bottom: 119px;
-    left: -64px;
-    bottom: 0;
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .order-ornament {
-      background-image: url(../img/desktop/Order/order-elements-desk2x.png);
-    }
-
-    @media (min-device-pixel-ratio: 3),
-      (min-resolution: 288dpi),
-      (min-resolution: 3dppx) {
-      .order-ornament {
-        background-image: url(../img/desktop/Order/order-elements-desk3x.png);
-      }
-    }
-  }
-
   .order-picture-bottom {
-    margin-bottom: 0;
+    margin-bottom: 119px;
     width: 524px;
-    /* top: 0;
-    left: 0px; */
   }
 }
 
-/* .logo-animation {
-  color: #ecd979;
+/* BIG DESCTOP STYLES  BIG DESCTOP STYLES  BIG DESCTOP STYLES */
+
+@media screen and (min-width: 1280px) {
 }
-.logo-animation__icon {
-  fill: #ecd979;
-} */
