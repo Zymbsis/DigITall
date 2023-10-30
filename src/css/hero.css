@@ -56,6 +56,10 @@
   }
 }
 
+.hero-photo {
+  border-radius: 4px;
+}
+
 .hero-hand-made {
   display: none;
 }
