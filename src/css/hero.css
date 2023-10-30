@@ -96,6 +96,24 @@
     max-width: 115px;
   }
 
+  .hand-made-symbol {
+    animation: 6s linear running infinite rotation;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(180deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
   .hand-made-text {
     color: rgba(252, 249, 249, 0.40);
     text-align: center;
