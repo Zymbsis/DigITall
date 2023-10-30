@@ -1,7 +1,7 @@
 .collection{
     background-image: url(../img/mobile/Collection/collection-elements-mob1x.png);
     background-repeat: no-repeat;
-    background-position: 0 225px; 
+    background-position: 0 338px; 
     background-size: 72px 177px;
 }
 
@@ -10,18 +10,8 @@ text-align: center;
 margin-bottom: 40px;
 }
 
-.collection-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.collection-item{
-    width: 100%;
-    max-width: 335px; 
-}
-.collection-item-div{
-width: 100%;
-max-width: 335px;
+.collection-item:not(:last-child){
+    margin-bottom: 20px;
 }
 
 .collection-img{
@@ -29,7 +19,6 @@ max-width: 335px;
     margin-bottom: 18px;
 }
 .collection-subtitle{
-color: #FCF9F9;
 font-weight: 500;
 line-height: 1.0;
 letter-spacing: 0.05em;
@@ -47,10 +36,7 @@ font-size: 14px;
 line-height: 1.0;
 letter-spacing: 0.05em;
 }
-.collection-icon{
-    fill: #ECD979;
-    stroke: #ECD979;
-}
+
 @media screen and (min-resolution: 192dpi), 
 screen and (min-resolution: 2dppx), 
 screen and (min-device-pixel-ratio: 2) {
@@ -66,13 +52,21 @@ screen and (min-device-pixel-ratio: 2) {
     }
 }
 @media screen and (min-width: 768px){
+    .collection-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
     .collection-item{
         max-width: 100%;
-    flex-basis: calc((100% - 20px) / 2);
+    width: calc((100% - 20px) / 2);
+    }
+    .collection-item:not(:last-child){
+        margin-bottom: 0;
     }
     .collection{
         background-size: 114px 300px;
-        background-position: -5px 150px; 
+        background-position: -5px 271px; 
     }
     .collection-subtitle{
         font-size: 18px;
@@ -83,14 +77,15 @@ screen and (min-device-pixel-ratio: 2) {
 @media screen and (min-width: 1280px) {
     .collection-item{
         max-width: 100%;
-    flex-basis: calc((100% - 40px) / 3);
+    width: calc((100% - 40px) / 3);
     }
     .collection{
         background-image: url(../img/desktop/Collection/collection-elements-desk1x.png);
-        background-size: 169px 300px;
-        background-position: 0px 150px; 
+        background-size: 169px 280px;
+        background-position: 0px 291px; 
     }
     .collection-list{
         gap: 40px 20px;
     }
 }
+
