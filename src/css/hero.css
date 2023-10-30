@@ -55,7 +55,7 @@
     transform: rotate(0deg) translateX(30px);
   }
 }
-
+.hero-photo {border-radius: 4px;}
 .hero-hand-made {
   display: none;
 }
