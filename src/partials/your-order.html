@@ -1,4 +1,4 @@
-<section class="order-section">
+<section class="order-section section">
   <div class="order-container container">
     <div>
       <h2 class="section-title order-title">
@@ -39,16 +39,14 @@
           <label class="form-label" for="user-comment">Comments</label>
         </div>
         <button type="submit" class="order-button">
-          <span class="button-text">send</span>
-          <div class="button-icon">
-            <svg width="27" height="10">
-              <use href="../img/icons.svg#arrow"></use>
-            </svg>
-          </div>
+          send
+          <svg width="27" height="10" class="button-icon">
+            <use href="../img/icons.svg#arrow"></use>
+          </svg>
         </button>
       </form>
     </div>
-    <picture class="order-picture-bottom">
+    <picture>
       <source
         srcset="
           ./img/desktop/Order/order-girl-desk1x.jpg 1x,
@@ -66,6 +64,7 @@
         media="(min-width: 768px)"
       />
       <img
+        class="order-picture-bottom"
         src="./img/tablet/Order/order-girl-tab1x.jpg"
         alt="Embriodered waistcoat and shirt"
         width="638"

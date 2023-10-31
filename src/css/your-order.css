@@ -1,9 +1,4 @@
-.order-section {
-  display: flex;
-  flex-direction: column;
-}
 .order-container {
-  width: 100%;
   padding-top: 630px;
   background-image: url(../img/mobile/Order/order-girlingreen-mob1x.jpg);
   background-repeat: no-repeat;
@@ -28,29 +23,20 @@
 }
 
 .order-title {
-  max-width: 335px;
   margin-bottom: 40px;
 }
 
 .order-form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  max-width: 335px;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  margin: 0 auto 80px;
 }
 
 .form-input {
   width: 100%;
   padding: 12px 16px;
-  align-items: flex-start;
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
   background-color: transparent;
-  margin-bottom: 30px;
   color: #fcf9f9;
   font-family: inherit;
   font-size: 16px;
@@ -73,11 +59,12 @@
   position: relative;
   color: rgba(252, 249, 249, 0.5);
   width: 100%;
+  margin-bottom: 30px;
 }
 
-.interactive-input .form-label {
+.form-label {
   position: absolute;
-  top: 14px;
+  top: 15px;
   left: 16px;
 }
 
@@ -94,13 +81,12 @@
 
 .textarea {
   width: 100%;
-  height: 160px;
+  height: 170px;
   resize: none;
   background-color: transparent;
   padding: 14px 16px;
   border-radius: 8px;
   border: 1px solid rgba(252, 249, 249, 0.1);
-  margin-bottom: 38px;
   outline: none;
   color: #fcf9f9;
   font-family: inherit;
@@ -121,16 +107,11 @@
   border: 1px solid rgba(252, 249, 249, 0.1);
   background-color: transparent;
   margin: 0 auto;
-}
-
-.button-text {
   color: #fcf9f9;
-  font-family: Manrope;
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: -0.56px;
+  letter-spacing: -0.04em;
   text-transform: uppercase;
 }
 
@@ -169,10 +150,6 @@
   display: none;
 }
 
-.order-banner-bottom {
-  display: none;
-}
-
 /* TABLET STYLES   TABLET STYLES  TABLET STYLES */
 
 @media screen and (min-width: 768px) {
@@ -180,72 +157,76 @@
     background-image: url(../img/tablet/Order/order-elements-tab1x.png);
     background-repeat: no-repeat;
     background-size: 322px 483px;
-    background-position-y: bottom;
+    background-position: bottom 50px left;
   }
+}
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .order-section {
-      background-image: url(../img/tablet/Order/order-elements-tab2x.png);
-    }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .order-section {
+    background-image: url(../img/tablet/Order/order-elements-tab2x.png);
   }
+}
 
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi),
-    (min-resolution: 3dppx) {
-    .order-section {
-      background-image: url(../img/tablet/Order/order-elements-tab3x.png);
-    }
+@media (min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+  .order-section {
+    background-image: url(../img/tablet/Order/order-elements-tab3x.png);
   }
+}
 
+.order-container {
+  padding-top: 876px;
+  padding-bottom: 79px;
+  background-image: url(../img/tablet/Order/order-girlingreen-tab1x.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .order-container {
-    padding-top: 876px;
-    background-image: url(../img/tablet/Order/order-girlingreen-tab1x.jpg);
+    background-image: url(../img/tablet/Order/order-girlingreen-tab2x.jpg);
   }
+}
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .order-container {
-      background-image: url(../img/tablet/Order/order-girlingreen-tab2x.jpg);
-    }
+@media (min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+  .order-container {
+    background-image: url(../img/tablet/Order/order-girlingreen-tab3x.jpg);
   }
+}
 
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi),
-    (min-resolution: 3dppx) {
-    .order-container {
-      background-image: url(../img/tablet/Order/order-girlingreen-tab3x.jpg);
-    }
-  }
+.order-title {
+  max-width: 542px;
+}
 
-  .order-title {
-    max-width: 542px;
-    margin: 0 auto 40px 0;
-  }
+.order-form {
+  max-width: 508px;
+}
 
-  .order-form {
-    max-width: 508px;
-    margin: 0 auto 0 0;
-  }
+.order-button {
+  min-width: 168px;
+  padding-left: 39px;
+  padding-right: 39px;
+  font-size: 16px;
+  margin-left: 0;
+  margin-bottom: 100px;
+}
 
-  .order-button {
-    align-self: start;
-    margin: 0 0 100px 0;
-  }
-
-  .order-picture-bottom {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 79px;
-  }
+.order-picture-bottom {
+  display: block;
+  margin-left: auto;
 }
 
 /* DESCTOP STYLES  DESCTOP STYLES  DESCTOP STYLES */
 
 @media screen and (min-width: 1280px) {
   .order-section {
+    padding-bottom: 0;
+    background-position: bottom 75px left;
     background-image: url(../img/desktop/Order/order-elements-desk1x.png);
   }
 
@@ -295,12 +276,7 @@
   }
 
   .order-button {
-    margin: 0 0 0 0;
-  }
-
-  .order-picture-bottom {
-    margin-bottom: 119px;
-    width: 524px;
+    margin-bottom: 0;
   }
 }
 
