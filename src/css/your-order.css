@@ -156,74 +156,74 @@
     background-size: 322px 483px;
     background-position: left 0 bottom 0;
   }
-}
 
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .order-section {
-    background-image: url(../img/tablet/Order/order-elements-tab2x.png);
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .order-section {
+      background-image: url(../img/tablet/Order/order-elements-tab2x.png);
+    }
   }
-}
 
-@media (min-device-pixel-ratio: 3),
-(min-resolution: 288dpi),
-(min-resolution: 3dppx) {
-  .order-section {
-    background-image: url(../img/tablet/Order/order-elements-tab3x.png);
+  @media (min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+    .order-section {
+      background-image: url(../img/tablet/Order/order-elements-tab3x.png);
+    }
   }
-}
 
-.order-container {
-  padding-top: 876px;
-  background-image: url(../img/tablet/Order/order-girlingreen-tab1x.jpg);
-  background-size: 768px 776px;
-}
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
   .order-container {
-    background-image: url(../img/tablet/Order/order-girlingreen-tab2x.jpg);
+    padding-top: 876px;
+    background-image: url(../img/tablet/Order/order-girlingreen-tab1x.jpg);
+    background-size: 768px 776px;
   }
-}
 
-@media (min-device-pixel-ratio: 3),
-(min-resolution: 288dpi),
-(min-resolution: 3dppx) {
-  .order-container {
-    background-image: url(../img/tablet/Order/order-girlingreen-tab3x.jpg);
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .order-container {
+      background-image: url(../img/tablet/Order/order-girlingreen-tab2x.jpg);
+    }
   }
-}
 
-.order-title {
-  max-width: 542px;
-}
+  @media (min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+    .order-container {
+      background-image: url(../img/tablet/Order/order-girlingreen-tab3x.jpg);
+    }
+  }
 
-.order-form {
-  max-width: 508px;
-}
+  .order-title {
+    max-width: 542px;
+  }
 
-.form-input {
-  font-size: 16px;
-}
+  .order-form {
+    max-width: 508px;
+    margin-bottom: 100px;
+  }
 
-.textarea {
-  font-size: 16px;
-}
+  .form-input {
+    font-size: 16px;
+  }
 
-.order-button {
-  min-width: 168px;
-  padding-left: 39px;
-  padding-right: 39px;
-  font-size: 16px;
-  margin-left: 0;
-  margin-bottom: 100px;
-}
+  .textarea {
+    font-size: 16px;
+  }
 
-.order-picture-bottom {
-  display: block;
-  margin-left: auto;
+  .order-button {
+    min-width: 168px;
+    padding-left: 39px;
+    padding-right: 39px;
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  .order-picture-bottom {
+    display: block;
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 1280px) {
