@@ -64,6 +64,7 @@
 .header-soc-link:hover,
 .header-soc-link:focus {
   border-color: #ecd979;
+  background-color: transparent;
 }
 
 .header-soc-icon {
