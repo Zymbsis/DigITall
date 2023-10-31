@@ -1,7 +1,7 @@
 body {
-  font-family: "Manrope", sans-serif;
-  color: #FCF9F9;
-  background-color: #1C2225;
+  font-family: 'Manrope', sans-serif;
+  color: #fcf9f9;
+  background-color: #1c2225;
 }
 
 .section {
@@ -25,7 +25,7 @@ body {
 }
 
 .slogan span {
-  color: #ECD979;
+  color: #ecd979;
 }
 
 /* section-title (sections "About Us", "Our collection", "Your order", "Testimonials") */
@@ -37,12 +37,12 @@ body {
 }
 
 .section-title span {
-  color: #ECD979;
+  color: #ecd979;
 }
 
 /* paragraph (sections "About us", section "Testimonials") */
 .text {
-  color: rgba(252, 249, 249, 0.40);
+  color: rgba(252, 249, 249, 0.4);
   font-size: 14px;
   line-height: normal;
 }
@@ -61,9 +61,14 @@ body {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #ECD979;
+  color: #ecd979;
 }
 
+@media screen and (min-widht: 1280px) and (max-widht: 1339px) {
+  .order-container {
+    padding-left: 64px;
+  }
+}
 @media screen and (min-width: 768px) {
   .section {
     padding-top: 50px;
