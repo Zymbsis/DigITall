@@ -1,3 +1,7 @@
+.hero-section {
+  padding-top: 132px;
+}
+
 .hero-title {
   margin-bottom: 20px;
 }
@@ -69,6 +73,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero-section {
+    padding-top: 178px;
+  }
+
   .hero-container {
     position: relative;
   }
@@ -130,6 +138,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .hero-section {
+    padding-top: 172px;
+  }
+
   .hero-container {
     display: flex;
     flex-direction: row-reverse;
