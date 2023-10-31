@@ -7,13 +7,6 @@
     margin-bottom: 64px;
 }
 
-.testimonials-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
 .testimonials-item {
     display: none;
     position: relative;
@@ -51,7 +44,8 @@
     }
 
     .testimonials-list {
-        align-items: flex-start;
+
+        display: flex;
         column-gap: 32px;
     }
 
@@ -60,7 +54,7 @@
     }
 
     .testimonials-item {
-        flex-basis: calc((100% - 32px) / 2);
+        width: calc((100% - 32px) / 2);
     }
 }
 
@@ -80,6 +74,6 @@
     }
 
     .testimonials-item {
-        flex-basis: calc((100% - 2 * 26px) / 3);
+        width: calc((100% - 2 * 26px) / 3);
     }
 }
