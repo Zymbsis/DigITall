@@ -36,13 +36,12 @@
 
 .header-tel {
   border: 1px solid rgba(252, 249, 249, 0.1);
-  transition: border-color 300ms ease-in-out, color 300ms ease-in-out;
+  transition: border-color 300ms ease-in-out;
 }
 
 .header-tel:hover,
 .header-tel:focus {
   border-color: #ecd979;
-  color: #ecd979;
 }
 
 .header-soc-list {
@@ -58,7 +57,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: border-color 300ms ease-in-out;
+  transition: border-color 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 
 .header-soc-link:hover,
@@ -69,12 +68,6 @@
 
 .header-soc-icon {
   fill: #fcf9f9;
-  transition: fill 300ms ease-in-out;
-}
-
-.header-soc-link:hover .header-soc-icon,
-.header-soc-link:focus .header-soc-icon {
-  fill: #ecd979;
 }
 
 .open-menu-btn {
@@ -83,12 +76,12 @@
   margin-left: 12px;
   width: 36px;
   height: 24px;
-  transition: transform 300ms ease-in-out;
+  transition: transform 100ms ease-in-out;
 }
 
 .open-menu-btn:hover,
 .open-menu-btn:active {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .open-menu-icon {
@@ -141,11 +134,11 @@
   stroke: #1c2225;
   width: 26px;
   height: 26px;
-  transition: transform 300ms ease-in-out;
+  transition: transform 100ms ease-in-out;
 }
 
 .close-menu-btn:active {
-  transform: scale(0.8);
+  transform: scale(0.9);
 }
 
 .close-menu-icon {
@@ -159,8 +152,6 @@
   transition: border-color 300ms ease-in-out;
 }
 
-.menu-tel:hover,
-.menu-tel:focus,
 .menu-tel:active {
   border-color: rgba(28, 34, 37, 0.2);
 }
@@ -172,12 +163,18 @@
 }
 
 .menu-nav {
-  text-align: end;
-  margin-top: 186px;
+  display: flex;
+  align-items: center;
+  height: calc(100% - 271px);
+}
+
+.menu-nav-list {
+  width: 100%;
+  text-align: right;
 }
 
 .menu-nav-item {
-  transition: transform 150ms ease-in-out;
+  transition: transform 200ms ease-in-out;
 }
 
 .menu-nav-item:not(:last-child) {
@@ -189,7 +186,7 @@
 }
 
 .menu-nav-item:hover {
-  transform: translate(-5px);
+  transform: translatex(-5px);
 }
 
 @media screen and (min-width: 768px) {
@@ -233,7 +230,7 @@
   }
 
   .menu-nav {
-    margin-top: 223px;
+    height: calc(100% - 394px);
   }
 
   .menu-nav-item:not(:last-child) {
