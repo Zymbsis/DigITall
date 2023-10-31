@@ -145,14 +145,14 @@
     transform: rotate(0deg) translateX(30px);
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+/* @media screen and (min-width: 320px) and (max-width: 767px) {
   .order-section picture {
     display: none;
   }
   .order-section button {
     margin-bottom: 0;
   }
-}
+} */
 
 /* TABLET STYLES   TABLET STYLES  TABLET STYLES */
 
