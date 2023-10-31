@@ -2,21 +2,21 @@
   padding-top: 630px;
   background-image: url(../img/mobile/Order/order-girlingreen-mob1x.jpg);
   background-repeat: no-repeat;
-  background-position: top 0 center;
-  background-size: auto;
+  background-position: center top 0;
+  background-size: 375px 550px;
 }
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .order-container {
     background-image: url(../img/mobile/Order/order-girlingreen-mob2x.jpg);
   }
 }
 
 @media (min-device-pixel-ratio: 3),
-  (min-resolution: 288dpi),
-  (min-resolution: 3dppx) {
+(min-resolution: 288dpi),
+(min-resolution: 3dppx) {
   .order-container {
     background-image: url(../img/mobile/Order/order-girlingreen-mob3x.jpg);
   }
@@ -31,6 +31,13 @@
   flex-direction: column;
 }
 
+.interactive-input {
+  position: relative;
+  color: rgba(252, 249, 249, 0.5);
+  width: 100%;
+  margin-bottom: 30px;
+}
+
 .form-input {
   width: 100%;
   padding: 12px 16px;
@@ -38,28 +45,16 @@
   border: 1px solid rgba(252, 249, 249, 0.1);
   background-color: transparent;
   color: #fcf9f9;
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 14px;
   line-height: normal;
   letter-spacing: -0.02em;
 }
 
 .form-input:hover,
-.textarea:hover {
-  border: 1px solid rgba(252, 249, 249, 0.6);
-}
-
 .form-input:focus,
+.textarea:hover,
 .textarea:focus {
-  border: 1px solid #ecd979;
-}
-
-.interactive-input {
-  position: relative;
-  color: rgba(252, 249, 249, 0.5);
-  width: 100%;
-  margin-bottom: 30px;
+  border: 1px solid rgba(252, 249, 249, 0.6);
 }
 
 .form-label {
@@ -89,15 +84,14 @@
   border: 1px solid rgba(252, 249, 249, 0.1);
   outline: none;
   color: #fcf9f9;
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 14px;
   line-height: normal;
   letter-spacing: -0.02em;
 }
 
 .order-button {
   display: flex;
+  min-width: 145px;
   height: 49px;
   padding: 14px 36px;
   justify-content: center;
@@ -107,7 +101,7 @@
   border: 1px solid rgba(252, 249, 249, 0.1);
   background-color: transparent;
   margin: 0 auto;
-  color: #fcf9f9;
+  color: currentColor;
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
@@ -120,7 +114,8 @@
   fill: #ecd979;
 }
 
-.order-button:hover {
+.order-button:hover,
+.order-button:focus {
   border: 1px solid #ecd979;
 }
 
@@ -132,119 +127,122 @@
   0% {
     transform: rotate(330deg);
   }
+
   33% {
     transform: rotate(220deg);
   }
+
   66% {
     transform: rotate(110deg);
   }
+
   75% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(0deg) translateX(30px);
   }
 }
-/* @media screen and (min-width: 320px) and (max-width: 767px) {
-  .order-section picture {
-    display: none;
-  }
-  .order-section button {
-    margin-bottom: 0;
-  }
-} */
 
-/* TABLET STYLES   TABLET STYLES  TABLET STYLES */
+.order-picture-bottom {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
   .order-section {
     background-image: url(../img/tablet/Order/order-elements-tab1x.png);
     background-repeat: no-repeat;
     background-size: 322px 483px;
-    background-position: bottom 50px left;
+    background-position: left 0 bottom 0;
   }
-}
 
-@media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .order-section {
-    background-image: url(../img/tablet/Order/order-elements-tab2x.png);
+    .order-section {
+      background-image: url(../img/tablet/Order/order-elements-tab2x.png);
+    }
   }
-}
 
-@media (min-device-pixel-ratio: 3),
+  @media (min-device-pixel-ratio: 3),
   (min-resolution: 288dpi),
   (min-resolution: 3dppx) {
-  .order-section {
-    background-image: url(../img/tablet/Order/order-elements-tab3x.png);
+    .order-section {
+      background-image: url(../img/tablet/Order/order-elements-tab3x.png);
+    }
   }
-}
 
-.order-container {
-  padding-top: 876px;
-  padding-bottom: 79px;
-  background-image: url(../img/tablet/Order/order-girlingreen-tab1x.jpg);
-}
+  .order-container {
+    padding-top: 876px;
+    background-image: url(../img/tablet/Order/order-girlingreen-tab1x.jpg);
+    background-size: 768px 776px;
+  }
 
-@media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .order-container {
-    background-image: url(../img/tablet/Order/order-girlingreen-tab2x.jpg);
+    .order-container {
+      background-image: url(../img/tablet/Order/order-girlingreen-tab2x.jpg);
+    }
   }
-}
 
-@media (min-device-pixel-ratio: 3),
+  @media (min-device-pixel-ratio: 3),
   (min-resolution: 288dpi),
   (min-resolution: 3dppx) {
-  .order-container {
-    background-image: url(../img/tablet/Order/order-girlingreen-tab3x.jpg);
+    .order-container {
+      background-image: url(../img/tablet/Order/order-girlingreen-tab3x.jpg);
+    }
+  }
+
+  .order-title {
+    max-width: 542px;
+  }
+
+  .order-form {
+    max-width: 508px;
+  }
+
+  .form-input {
+    font-size: 16px;
+  }
+
+  .textarea {
+    font-size: 16px;
+  }
+
+  .order-button {
+    min-width: 168px;
+    padding-left: 39px;
+    padding-right: 39px;
+    font-size: 16px;
+    margin-left: 0;
+    margin-bottom: 100px;
+  }
+
+  .order-picture-bottom {
+    display: block;
+    margin-left: auto;
   }
 }
-
-.order-title {
-  max-width: 542px;
-}
-
-.order-form {
-  max-width: 508px;
-}
-
-.order-button {
-  min-width: 168px;
-  padding-left: 39px;
-  padding-right: 39px;
-  font-size: 16px;
-  margin-left: 0;
-  margin-bottom: 100px;
-}
-
-.order-picture-bottom {
-  display: block;
-  margin-left: auto;
-}
-
-/* DESCTOP STYLES  DESCTOP STYLES  DESCTOP STYLES */
 
 @media screen and (min-width: 1280px) {
   .order-section {
-    padding-bottom: 0;
-    background-position: bottom 75px left;
+    background-position: left 0 bottom 75px;
     background-image: url(../img/desktop/Order/order-elements-desk1x.png);
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .order-section {
       background-image: url(../img/desktop/Order/order-elements-desk2x.png);
     }
   }
 
   @media (min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi),
-    (min-resolution: 3dppx) {
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
     .order-section {
       background-image: url(../img/desktop/Order/order-elements-desk3x.png);
     }
@@ -254,37 +252,29 @@
     display: flex;
     flex-direction: row-reverse;
     gap: 50px;
-    width: 100%;
     padding-top: 926px;
     background-image: url(../img/desktop/Order/order-girlingreen-desk1x.jpg);
+    background-position: center top 0;
+    background-size: 1282px 776px;
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .order-container {
       background-image: url(../img/desktop/Order/order-girlingreen-desk2x.jpg);
     }
   }
 
   @media (min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi),
-    (min-resolution: 3dppx) {
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
     .order-container {
       background-image: url(../img/desktop/Order/order-girlingreen-desk3x.jpg);
     }
   }
 
   .order-form {
-    margin: 0 0 0 0;
-  }
-
-  .order-button {
     margin-bottom: 0;
   }
-}
-
-/* BIG DESCTOP STYLES  BIG DESCTOP STYLES  BIG DESCTOP STYLES */
-
-@media screen and (min-width: 1280px) {
 }
