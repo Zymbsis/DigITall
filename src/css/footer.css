@@ -3,6 +3,17 @@
     border-top: 1px solid rgba(252, 249, 249, 0.10);
 }
 
+
+.footer-container {
+    background-image: url(../img/mobile/Footer/footer-elements-mob1x.png);
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 375px 212px;
+    padding-top: 40px;
+    /* Відштовхує й прибиває фонове зображення до низу футера */
+    padding-bottom: 292px;
+}
+
 @media screen and (min-resolution: 192dpi) {
     .footer-container {
         background-image: url(../img/mobile/Footer/footer-elements-mob2x.png);
@@ -15,23 +26,11 @@
     }
 }
 
-.footer-container {
-    background-image: url(../img/mobile/Footer/footer-elements-mob1x.png);
-    background-position-y: bottom;
-    background-repeat: no-repeat;
-    background-size: 375px 212px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding-top: 40px;
-    /* Відштовхує й прибиває фонове зображення до низу футера */
-    padding-bottom: 292px;
-}
-
 .footer-nav-list {
     display: flex;
     gap: 25px 40px;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 .footer-nav-item {
@@ -46,7 +45,6 @@
         background-position-y: 0;
         background-size: 174px 370px;
         padding-right: 215px;
-        row-gap: 80px;
     }
 
     @media screen and (min-resolution: 192dpi) {
@@ -64,7 +62,7 @@
     .footer-nav-list {
         gap: 25px;
         justify-content: flex-start;
-
+        margin-bottom: 80px;
     }
 
     .footer-nav-item {
@@ -75,11 +73,8 @@
 @media screen and (min-width: 1280px) {
     .footer-container {
         background-image: url(../img/desktop/Footer/footer-elements-desk1x.png);
-        background-position-x: right;
         background-size: 336px 363px;
         padding-right: 426px;
-        /* padding-left: 100px; */
-        row-gap: 80px;
     }
 
     @media screen and (min-resolution: 192dpi) {
@@ -92,5 +87,10 @@
         .footer-container {
             background-image: url(../img/desktop/Footer/footer-elements-desk3x.png);
         }
+    }
+
+    .footer-nav-list {
+        gap: 25px;
+        margin-bottom: 117px;
     }
 }
