@@ -136,6 +136,7 @@
   transition: transform 100ms ease-in-out;
 }
 
+.close-menu-btn:hover,
 .close-menu-btn:active {
   transform: scale(0.9);
 }
@@ -151,6 +152,7 @@
   transition: border-color 300ms ease-in-out;
 }
 
+.menu-tel:hover,
 .menu-tel:active {
   border-color: rgba(28, 34, 37, 0.2);
 }
