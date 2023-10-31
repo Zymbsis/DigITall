@@ -253,6 +253,7 @@
     flex-direction: row-reverse;
     gap: 50px;
     padding-top: 926px;
+    padding-left: 64px;
     background-image: url(../img/desktop/Order/order-girlingreen-desk1x.jpg);
     background-position: center top 0;
     background-size: 1282px 776px;
