@@ -35,10 +35,10 @@
 }
 
 .hero-anchor-link:hover .hero-anchor-icon {
-  animation: 3s linear running rotation;
+  animation: 3s linear running rotation-trick;
 }
 
-@keyframes rotation {
+@keyframes rotation-trick {
   0% {
     transform: rotate(330deg);
   }
