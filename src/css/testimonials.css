@@ -3,7 +3,6 @@
 }
 
 .testimonials-section-title {
-    text-align: left;
     margin-bottom: 64px;
 }
 
@@ -38,15 +37,13 @@
 }
 
 @media screen and (min-width: 768px) {
-
     .testimonials-section {
         padding-bottom: 100px;
     }
 
     .testimonials-list {
-
         display: flex;
-        column-gap: 32px;
+        gap: 32px;
     }
 
     .testimonials-item:nth-child(2) {
@@ -59,14 +56,12 @@
 }
 
 @media screen and (min-width: 1280px) {
-
     .testimonials-section {
         padding-bottom: 150px;
     }
 
     .testimonials-list {
-        column-gap: 26px;
-        align-items: stretch;
+        gap: 26px;
     }
 
     .testimonials-item:nth-child(3) {
