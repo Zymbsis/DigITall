@@ -17,7 +17,11 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
-  //   const delayAnchor = document.querySelector('.hero-anchor-link');
+  const customOffsets = {
+    // Add personalized offsets for specific anchor links
+    order: 150,
+  };
+  //  const delayAnchor = document.querySelector('.hero-anchor-link');
 
   anchorLinks.forEach(link => {
     link.addEventListener('click', function (e) {
@@ -25,9 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const targetId = this.getAttribute('href').substring(1);
       const targetElement = document.getElementById(targetId);
-      const offset = 60; // Adjust scroll end position
+      const offset = customOffsets[targetId] || 60; // Adjust scroll end position
       const duration = 1200; // Adjust the duration as needed
-      //   const delay = this === delayAnchor ? 3100 : 0; // Add delay if it's the specific element (3100 is a delay in miliseconds, specific element is defined by delayAnchor)
+      //  const delay = this === delayAnchor ? 3100 : 0; // Add delay if it's the specific element (3100 is a delay in miliseconds, specific element is defined by delayAnchor)
 
       setTimeout(() => {
         const targetPosition = targetElement.offsetTop - offset;
@@ -50,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         requestAnimationFrame(animate);
+        // }, delay);
       });
     });
   });
@@ -65,5 +70,37 @@ document.addEventListener('DOMContentLoaded', function () {
     const ay = 1 - cy - by;
 
     return ((ay * t + by) * t + cy) * t;
+  }
+});
+
+const collectionItems = document.querySelectorAll('.collection-item');
+const lightboxContainer = document.getElementById('lightbox-container');
+const lightboxImage = document.getElementById('lightbox-image');
+const lightboxClose = document.getElementById('lightbox-close');
+
+collectionItems.forEach((item, index) => {
+  const img = item.querySelector('.collection-img');
+
+  img.addEventListener('click', () => {
+    lightboxImage.src = img.src;
+    lightboxImage.alt = img.alt;
+    lightboxImage.width = img.width;
+    lightboxImage.height = img.height;
+    lightboxContainer.style.pointerEvents = 'auto';
+    lightboxContainer.style.visibility = 'visible';
+    lightboxContainer.style.opacity = '1';
+  });
+});
+
+function closeLightbox() {
+  lightboxContainer.style.pointerEvents = 'none';
+  lightboxContainer.style.visibility = 'hidden';
+  lightboxContainer.style.opacity = '0';
+}
+
+lightboxClose.addEventListener('click', closeLightbox);
+lightboxContainer.addEventListener('click', event => {
+  if (event.target === lightboxContainer) {
+    closeLightbox();
   }
 });
