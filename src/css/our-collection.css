@@ -101,9 +101,9 @@ screen and (min-device-pixel-ratio: 3) {
 }
 
 @media screen and (min-width: 1280px) {
-    .collection {
+    .collection-section {
         background-image: url(../img/desktop/Collection/collection-elements-desk1x.png);
-        background-size: 169px 280px;
+        background-size: 169px 300px;
         background-position: left 0 top 296px;
     }
 

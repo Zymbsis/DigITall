@@ -78,13 +78,13 @@
     }
 
     @media screen and (min-resolution: 192dpi) {
-        .footer-container {
+        .footer {
             background-image: url(../img/desktop/Footer/footer-elements-desk2x.png);
         }
     }
 
     @media screen and (min-resolution: 288dpi) {
-        .footer-container {
+        .footer {
             background-image: url(../img/desktop/Footer/footer-elements-desk3x.png);
         }
     }
