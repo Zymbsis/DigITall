@@ -12,7 +12,7 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
+(min-resolution: 144dpi),
 (min-resolution: 2dppx) {
     .footer {
         background-image: url(../img/mobile/Footer/footer-elements-mob2x.png);
@@ -20,7 +20,7 @@
 }
 
 @media (min-device-pixel-ratio: 3),
-(min-resolution: 288dpi),
+(min-resolution: 216dpi),
 (min-resolution: 3dppx) {
     .footer {
         background-image: url(../img/mobile/Footer/footer-elements-mob3x.png);
@@ -45,17 +45,17 @@
         background-position: right 0 top 0;
     }
 
-    @media screen and (min-resolution: 144dpi),
-    screen and (min-resolution: 2dppx),
-    screen and (min-device-pixel-ratio: 2) {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 144dpi),
+    (min-resolution: 2dppx) {
         .footer {
             background-image: url(../img/tablet/Footer/footer-elements-tab2x.png);
         }
     }
 
-    @media screen and (min-resolution: 216dpi),
-    screen and (min-resolution: 3dppx),
-    screen and (min-device-pixel-ratio: 3) {
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 216dpi),
+    (min-resolution: 3dppx) {
         .footer {
             background-image: url(../img/tablet/Footer/footer-elements-tab3x.png);
         }
@@ -85,17 +85,17 @@
         background-size: 336px 363px;
     }
 
-    @media screen and (min-resolution: 144dpi),
-    screen and (min-resolution: 2dppx),
-    screen and (min-device-pixel-ratio: 2) {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 144dpi),
+    (min-resolution: 2dppx) {
         .footer-container {
             background-image: url(../img/desktop/Footer/footer-elements-desk2x.png);
         }
     }
 
-    @media screen and (min-resolution: 216dpi),
-    screen and (min-resolution: 3dppx),
-    screen and (min-device-pixel-ratio: 3) {
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 216dpi),
+    (min-resolution: 3dppx) {
         .footer-container {
             background-image: url(../img/desktop/Footer/footer-elements-desk3x.png);
         }

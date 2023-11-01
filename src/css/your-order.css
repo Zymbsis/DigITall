@@ -6,7 +6,7 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
+(min-resolution: 144dpi),
 (min-resolution: 2dppx) {
   .order-section {
     background-image: url(../img/mobile/order/order-girlingreen-mob2x.jpg);
@@ -14,7 +14,7 @@
 }
 
 @media (min-device-pixel-ratio: 3),
-(min-resolution: 288dpi),
+(min-resolution: 216dpi),
 (min-resolution: 3dppx) {
   .order-section {
     background-image: url(../img/mobile/order/order-girlingreen-mob3x.jpg);
@@ -150,7 +150,7 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
+  (min-resolution: 144dpi),
   (min-resolution: 2dppx) {
     .order-section {
       background-image: url(../img/tablet/order/order-girlingreen-tab2x.jpg), url(../img/tablet/order/order-elements-tab2x.png);
@@ -158,7 +158,7 @@
   }
 
   @media (min-device-pixel-ratio: 3),
-  (min-resolution: 288dpi),
+  (min-resolution: 216dpi),
   (min-resolution: 3dppx) {
     .order-section {
       background-image: url(../img/tablet/order/order-girlingreen-tab3x.jpg), url(../img/tablet/order/order-elements-tab3x.png);
@@ -205,7 +205,7 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
+  (min-resolution: 144dpi),
   (min-resolution: 2dppx) {
     .order-section {
       background-image: url(../img/desktop/order/order-girlingreen-desk2x.jpg), url(../img/desktop/order/order-elements-desk2x.png);
@@ -213,7 +213,7 @@
   }
 
   @media (min-device-pixel-ratio: 3),
-  (min-resolution: 288dpi),
+  (min-resolution: 216dpi),
   (min-resolution: 3dppx) {
     .order-section {
       background-image: url(../img/desktop/order/order-girlingreen-desk3x.jpg), url(../img/desktop/order/order-elements-desk3x.png);
