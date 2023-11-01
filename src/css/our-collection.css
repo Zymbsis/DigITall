@@ -1,0 +1,13 @@
+/* Animation */
+.collection-img {
+    transition: transform 300ms ease-in-out;
+}
+
+.collection-item:hover .collection-img {
+    transform: scale(1.05); 
+    
+}
+.collection-text:hover {
+    /* transform: scale(1.05);  */
+    color: #ECD979;
+}
