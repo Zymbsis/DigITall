@@ -17,7 +17,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
-  const delayAnchor = document.querySelector('.hero-anchor-link');
+  //   const delayAnchor = document.querySelector('.hero-anchor-link');
 
   anchorLinks.forEach(link => {
     link.addEventListener('click', function (e) {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const targetElement = document.getElementById(targetId);
       const offset = 60; // Adjust scroll end position
       const duration = 1200; // Adjust the duration as needed
-      const delay = this === delayAnchor ? 3100 : 0; // Add delay if it's the specific element (3100 is a delay in miliseconds, specific element is defined by delayAnchor)
+      //   const delay = this === delayAnchor ? 3100 : 0; // Add delay if it's the specific element (3100 is a delay in miliseconds, specific element is defined by delayAnchor)
 
       setTimeout(() => {
         const targetPosition = targetElement.offsetTop - offset;
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         requestAnimationFrame(animate);
-      }, delay);
+      });
     });
   });
 
