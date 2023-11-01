@@ -1,91 +1,101 @@
-.about-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 50px;
-}
 .about-section {
-  background-size: 250px 408px;
-  background-repeat: no-repeat;
-  background-position: right bottom -22px;
   background-image: url(../img/mobile/About/aboutus-elements-mob1x.png);
+  background-repeat: no-repeat;
+  background-size: 250px 408px;
+  background-position: right 0 bottom -22px;
 }
+
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 144dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 144dpi),
+(min-resolution: 2dppx) {
   .about-section {
     background-image: url(../img/mobile/About/aboutus-elements-mob2x.png);
   }
+
   @media (min-device-pixel-ratio: 3),
-    (min-resolution: 216dpi),
-    (min-resolution: 3dppx) {
+  (min-resolution: 216dpi),
+  (min-resolution: 3dppx) {
     .about-section {
       background-image: url(../img/mobile/About/aboutus-elements-mob3x.png);
     }
   }
 }
-.section-title {
+
+.about-text-container {
+  margin-bottom: 50px;
+}
+
+.about-title {
   margin-bottom: 40px;
 }
 
-.about-text {
+.about-text:not(:last-child) {
   margin-bottom: 20px;
 }
 
 .about-image {
   border-radius: 4px;
-  /* width: 335px; */
 }
 
 @media screen and (min-width: 768px) {
-  .about-container {
-    gap: 40px;
+  .about-section {
+    background-image: url(../img/tablet/About/aboutus-elements-tab1x.png);
+    background-size: 250px 408px;
+    background-position: right 0 bottom 0;
   }
 
-  .about-section {
-    background-size: 250px 408px;
-    background-image: url(../img/tablet/About/aboutus-elements-tab1x.png);
-  }
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 144dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 144dpi),
+  (min-resolution: 2dppx) {
     .about-section {
       background-image: url(../img/tablet/About/aboutus-elements-tab2x.png);
     }
   }
+
   @media (min-device-pixel-ratio: 3),
-    (min-resolution: 216dpi),
-    (min-resolution: 3dppx) {
+  (min-resolution: 216dpi),
+  (min-resolution: 3dppx) {
     .about-section {
       background-image: url(../img/tablet/About/aboutus-elements-tab3x.png);
     }
   }
+
+  .about-text-container {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-  .about-container {
-    flex-direction: row;
-    gap: 50px;
-  }
-  .about-text-container {
-    max-width: 436px;
-  }
   .about-section {
-    background-size: 545px 484px;
     background-image: url(../img/desktop/About/aboutus-elements-desk1x.png);
+    background-size: 545px 484px;
+    background-position: right 0 bottom -5px;
   }
+
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 144dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 144dpi),
+  (min-resolution: 2dppx) {
     .about-section {
       background-image: url(../img/desktop/About/aboutus-elements-desk2x.png);
     }
   }
+
   @media (min-device-pixel-ratio: 3),
-    (min-resolution: 216dpi),
-    (min-resolution: 3dppx) {
+  (min-resolution: 216dpi),
+  (min-resolution: 3dppx) {
     .about-section {
       background-image: url(../img/desktop/About/aboutus-elements-desk3x.png);
     }
+  }
+
+  .about-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .about-text-container {
+    max-width: 436px;
+    margin-bottom: 0;
   }
 }
