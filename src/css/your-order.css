@@ -90,23 +90,12 @@
 }
 
 .order-button {
-  display: flex;
   min-width: 145px;
   height: 49px;
-  padding: 14px 36px;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 15px;
-  border: 1px solid rgba(252, 249, 249, 0.1);
   background-color: transparent;
   margin: 0 auto;
   color: currentColor;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
 }
 
 .button-icon {
@@ -214,9 +203,6 @@
 
   .order-button {
     min-width: 168px;
-    padding-left: 39px;
-    padding-right: 39px;
-    font-size: 16px;
     margin-left: 0;
   }
 
