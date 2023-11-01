@@ -120,7 +120,7 @@
 }
 
 .order-button:hover .button-icon {
-    animation: 3s linear running rotation-trick;
+    animation: 1500ms linear running rotation-trick;
 }
 
 @keyframes rotation-trick {
