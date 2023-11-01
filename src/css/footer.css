@@ -1,0 +1,104 @@
+.footer {
+    border-top: 1px solid rgba(252, 249, 249, 0.10);
+    background-image: url(../img/mobile/Footer/footer-elements-mob1x.png);
+    background-position: center bottom 0;
+    background-repeat: no-repeat;
+    background-size: 375px 212px;
+}
+
+.footer-container {
+    padding-top: 40px;
+    padding-bottom: 292px;
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .footer {
+        background-image: url(../img/mobile/Footer/footer-elements-mob2x.png);
+    }
+}
+
+@media screen and (min-resolution: 288dpi) {
+    .footer {
+        background-image: url(../img/mobile/Footer/footer-elements-mob3x.png);
+    }
+}
+
+.footer-nav-list {
+    display: flex;
+    gap: 25px 40px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.footer-nav-item {
+    flex-basis: calc((100% - 40px) / 2);
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        background-image: url(../img/tablet/Footer/footer-elements-tab1x.png);
+        background-position: right 0 top 0;
+        background-size: 174px 370px;
+    }
+
+    @media screen and (min-resolution: 192dpi) {
+        .footer {
+            background-image: url(../img/tablet/Footer/footer-elements-tab2x.png);
+        }
+    }
+
+    @media screen and (min-resolution: 288dpi) {
+        .footer {
+            background-image: url(../img/tablet/Footer/footer-elements-tab3x.png);
+        }
+    }
+
+    .footer-container {
+        padding-bottom: 40px;
+    }
+
+    .footer-nav-list {
+        gap: 25px;
+        margin-bottom: 80px;
+    }
+
+    .footer-nav-item {
+        flex-basis: auto;
+    }
+
+    .footer-slogan-text {
+        max-width: 521px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer {
+        background-image: url(../img/desktop/Footer/footer-elements-desk1x.png);
+        background-size: 336px 363px;
+    }
+
+    @media screen and (min-resolution: 192dpi) {
+        .footer-container {
+            background-image: url(../img/desktop/Footer/footer-elements-desk2x.png);
+        }
+    }
+
+    @media screen and (min-resolution: 288dpi) {
+        .footer-container {
+            background-image: url(../img/desktop/Footer/footer-elements-desk3x.png);
+        }
+    }
+
+    .footer-container {
+        padding-bottom: 40px;
+    }
+
+    .footer-slogan-text {
+        max-width: 754px;
+    }
+
+    .footer-nav-list {
+        gap: 25px;
+        margin-bottom: 117px;
+    }
+}

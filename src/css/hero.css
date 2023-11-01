@@ -1,0 +1,165 @@
+.hero-section {
+  padding-top: 132px;
+}
+
+.hero-title {
+  margin-bottom: 20px;
+}
+
+.hero-anchor-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 70px;
+  margin-bottom: 40px;
+  width: fit-content;
+  padding: 14px 36px;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.10);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  transition: border-color 300ms ease-in-out;
+}
+
+.hero-anchor-link:hover,
+.hero-anchor-link:focus {
+  border-color: #ECD979;
+}
+
+.hero-anchor-icon {
+  transform: rotate(-30deg);
+  fill: #ECD979;
+}
+
+.hero-anchor-link:hover .hero-anchor-icon {
+  animation: 3s linear running rotation-trick;
+}
+
+@keyframes rotation-trick {
+  0% {
+    transform: rotate(330deg);
+  }
+
+  33% {
+    transform: rotate(220deg);
+  }
+
+  66% {
+    transform: rotate(110deg);
+  }
+
+  75% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg) translateX(30px);
+  }
+}
+
+.hero-photo {
+  border-radius: 4px;
+}
+
+.hero-hand-made {
+  display: none;
+}
+
+.ukraine {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding-top: 178px;
+  }
+
+  .hero-container {
+    position: relative;
+  }
+
+  .hero-title {
+    max-width: 549px;
+    margin-bottom: 40px;
+  }
+
+  .hero-anchor-link {
+    margin-left: 141px;
+    padding-left: 39px;
+    padding-right: 39px;
+    font-size: 16px;
+  }
+
+  .hero-hand-made {
+    position: absolute;
+    top: -26px;
+    right: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    max-width: 115px;
+  }
+
+  .hand-made-symbol {
+    animation: 6s linear running infinite rotation;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(180deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .hand-made-text {
+    color: rgba(252, 249, 249, 0.40);
+    text-align: center;
+    line-height: normal;
+    letter-spacing: -0.04em;
+  }
+
+  .ukraine {
+    display: block;
+    position: absolute;
+    bottom: -98.5px;
+    right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-section {
+    padding-top: 172px;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+    justify-content: flex-end;
+  }
+
+  .hero-title {
+    padding-top: 94px;
+    max-width: 518px;
+  }
+
+  .hero-hand-made {
+    top: 14px;
+    right: 100px;
+  }
+
+  .ukraine {
+    right: 100px;
+  }
+}
