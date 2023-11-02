@@ -80,9 +80,10 @@ const lightboxClose = document.getElementById('lightbox-close');
 
 collectionItems.forEach((item, index) => {
   const img = item.querySelector('.collection-img');
-  const newSrc =
-    img.src.replace(/img\/desk1440\/Collection/g, 'assets').slice(0, -6) +
-    '3x.jpg';
+  //   const newSrc = img.src.slice(0, -6) + '3x.jpg';
+  const newSrc = img.src
+    .replace(/img\/desk1440\/Collection/g, 'assets')
+    .replace(/px1x/g, 'px3x');
   const newWidth = img.width * 1.5;
   const newHeight = img.height * 1.5;
 
