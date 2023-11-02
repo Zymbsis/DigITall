@@ -222,20 +222,16 @@
         .order-section {
             background-image: url(../img/desktop/Order/order-girlingreen-desk3x.jpg), url(../img/desktop/Order/order-elements-desk3x.png);
         }
+    }
 
-        .order-container {
-            display: flex;
-            flex-direction: row-reverse;
-            gap: 50px;
-            padding-top: 926px;
-        }
+    .order-container {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 50px;
+        padding-top: 926px;
+    }
 
-        .order-img {
-            width: 100%;
-        }
-
-        .order-form {
-            margin-bottom: 0;
-        }
+    .order-form {
+        margin-bottom: 0;
     }
 }
