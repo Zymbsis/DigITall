@@ -35,6 +35,10 @@
     letter-spacing: 0.05em;
 }
 
+#lightbox-container {
+    display: none;
+}
+
 @media screen and (min-resolution: 144dpi),
 screen and (min-resolution: 2dppx),
 screen and (min-device-pixel-ratio: 2) {
@@ -99,14 +103,12 @@ screen and (min-device-pixel-ratio: 3) {
         font-size: 18px;
     }
 
+
     /* ====== Image preview ====== */
 
-    .lightbox-wrapper {
-        position: relative;
-    }
 
     #lightbox-container {
-        /* display: none; */
+        display: block;
         pointer-events: none;
         visibility: hidden;
         opacity: 0;
@@ -127,6 +129,7 @@ screen and (min-device-pixel-ratio: 3) {
         width: 100%;
         height: 100%;
         cursor: pointer;
+        filter: blur(5);
     }
 
     #lightbox-content {
@@ -142,9 +145,7 @@ screen and (min-device-pixel-ratio: 3) {
     }
 
     #lightbox-image {
-        max-width: 150%;
-        width: 347px;
-        height: 430px;
+        width: 600px;
         border-radius: 4px;
     }
 

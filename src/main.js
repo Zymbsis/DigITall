@@ -80,12 +80,15 @@ const lightboxClose = document.getElementById('lightbox-close');
 
 collectionItems.forEach((item, index) => {
   const img = item.querySelector('.collection-img');
+  const newSrc = img.src.slice(0, -6) + '3x.jpg';
+  const newWidth = img.width * 1.5;
+  const newHeight = img.height * 1.5;
 
   img.addEventListener('click', () => {
-    lightboxImage.src = img.src;
+    lightboxImage.src = newSrc;
     lightboxImage.alt = img.alt;
-    lightboxImage.width = img.width;
-    lightboxImage.height = img.height;
+    lightboxImage.width = newWidth;
+    lightboxImage.height = newHeight;
     lightboxContainer.style.pointerEvents = 'auto';
     lightboxContainer.style.visibility = 'visible';
     lightboxContainer.style.opacity = '1';
