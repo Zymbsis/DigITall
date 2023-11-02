@@ -1,9 +1,9 @@
 .footer {
     border-top: 1px solid rgba(252, 249, 249, 0.10);
     background-image: url(../img/mobile/Footer/footer-elements-mob1x.png);
-    background-position: center bottom 0;
     background-repeat: no-repeat;
     background-size: 375px 212px;
+    background-position: center bottom 0;
 }
 
 .footer-container {
@@ -11,13 +11,17 @@
     padding-bottom: 292px;
 }
 
-@media screen and (min-resolution: 192dpi) {
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 144dpi),
+(min-resolution: 2dppx) {
     .footer {
         background-image: url(../img/mobile/Footer/footer-elements-mob2x.png);
     }
 }
 
-@media screen and (min-resolution: 288dpi) {
+@media (min-device-pixel-ratio: 3),
+(min-resolution: 216dpi),
+(min-resolution: 3dppx) {
     .footer {
         background-image: url(../img/mobile/Footer/footer-elements-mob3x.png);
     }
@@ -37,17 +41,21 @@
 @media screen and (min-width: 768px) {
     .footer {
         background-image: url(../img/tablet/Footer/footer-elements-tab1x.png);
-        background-position: right 0 top 0;
         background-size: 174px 370px;
+        background-position: right 0 top 0;
     }
 
-    @media screen and (min-resolution: 192dpi) {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 144dpi),
+    (min-resolution: 2dppx) {
         .footer {
             background-image: url(../img/tablet/Footer/footer-elements-tab2x.png);
         }
     }
 
-    @media screen and (min-resolution: 288dpi) {
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 216dpi),
+    (min-resolution: 3dppx) {
         .footer {
             background-image: url(../img/tablet/Footer/footer-elements-tab3x.png);
         }
@@ -77,13 +85,17 @@
         background-size: 336px 363px;
     }
 
-    @media screen and (min-resolution: 192dpi) {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 144dpi),
+    (min-resolution: 2dppx) {
         .footer-container {
             background-image: url(../img/desktop/Footer/footer-elements-desk2x.png);
         }
     }
 
-    @media screen and (min-resolution: 288dpi) {
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 216dpi),
+    (min-resolution: 3dppx) {
         .footer-container {
             background-image: url(../img/desktop/Footer/footer-elements-desk3x.png);
         }

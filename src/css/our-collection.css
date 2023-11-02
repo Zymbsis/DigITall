@@ -5,6 +5,22 @@
     background-size: 72px 177px;
 }
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 144dpi),
+(min-resolution: 2dppx) {
+    .collection-section {
+        background-image: url(../img/mobile/Collection/collection-elements-mob2x.png);
+    }
+}
+
+@media (min-device-pixel-ratio: 3),
+(min-resolution: 216dpi),
+(min-resolution: 3dppx) {
+    .collection-section {
+        background-image: url(../img/mobile/Collection/collection-elements-mob3x.png);
+    }
+}
+
 .collection-title {
     text-align: center;
     margin-bottom: 40px;
@@ -35,22 +51,6 @@
     letter-spacing: 0.05em;
 }
 
-@media screen and (min-resolution: 144dpi),
-screen and (min-resolution: 2dppx),
-screen and (min-device-pixel-ratio: 2) {
-    .collection-section {
-        background-image: url(../img/mobile/Collection/collection-elements-mob2x.png);
-    }
-}
-
-@media screen and (min-resolution: 216dpi),
-screen and (min-resolution: 3dppx),
-screen and (min-device-pixel-ratio: 3) {
-    .collection-section {
-        background-image: url(../img/mobile/Collection/collection-elements-mob3x.png);
-    }
-}
-
 @media screen and (min-width: 768px) {
     .collection-section {
         background-image: url(../img/tablet/Collection/collection-elements-tab1x.png);
@@ -58,17 +58,17 @@ screen and (min-device-pixel-ratio: 3) {
         background-position: left 0 top 271px;
     }
 
-    @media screen and (min-resolution: 144dpi),
-    screen and (min-resolution: 2dppx),
-    screen and (min-device-pixel-ratio: 2) {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 144dpi),
+    (min-resolution: 2dppx) {
         .collection-section {
             background-image: url(../img/tablet/Collection/collection-elements-tab2x.png);
         }
     }
 
-    @media screen and (min-resolution: 216dpi),
-    screen and (min-resolution: 3dppx),
-    screen and (min-device-pixel-ratio: 3) {
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 216dpi),
+    (min-resolution: 3dppx) {
         .collection-section {
             background-image: url(../img/tablet/Collection/collection-elements-tab3x.png);
         }
@@ -103,21 +103,21 @@ screen and (min-device-pixel-ratio: 3) {
 @media screen and (min-width: 1280px) {
     .collection {
         background-image: url(../img/desktop/Collection/collection-elements-desk1x.png);
-        background-size: 169px 280px;
+        background-size: 169px 300px;
         background-position: left 0 top 296px;
     }
 
-    @media screen and (min-resolution: 144dpi),
-    screen and (min-resolution: 2dppx),
-    screen and (min-device-pixel-ratio: 2) {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 144dpi),
+    (min-resolution: 2dppx) {
         .collection-section {
             background-image: url(../img/desktop/Collection/collection-elements-desk2x.png);
         }
     }
 
-    @media screen and (min-resolution: 216dpi),
-    screen and (min-resolution: 3dppx),
-    screen and (min-device-pixel-ratio: 3) {
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 216dpi),
+    (min-resolution: 3dppx) {
         .collection-section {
             background-image: url(../img/desktop/Collection/collection-elements-desk3x.png);
         }

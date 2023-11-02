@@ -1,26 +1,11 @@
-.hero-section {
-  padding-top: 132px;
-}
-
 .hero-title {
   margin-bottom: 20px;
 }
 
 .hero-anchor-link {
-  display: flex;
-  align-items: center;
-  gap: 10px;
   margin-left: 70px;
   margin-bottom: 40px;
   width: fit-content;
-  padding: 14px 36px;
-  border-radius: 15px;
-  border: 1px solid rgba(252, 249, 249, 0.10);
-  font-size: 14px;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
   transition: border-color 300ms ease-in-out;
 }
 
@@ -73,10 +58,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero-section {
-    padding-top: 178px;
-  }
-
   .hero-container {
     position: relative;
   }
@@ -138,10 +119,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .hero-section {
-    padding-top: 172px;
-  }
-
   .hero-container {
     display: flex;
     flex-direction: row-reverse;

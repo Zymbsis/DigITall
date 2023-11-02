@@ -64,11 +64,26 @@ body {
   color: #ecd979;
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 36px;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.10);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
 @media screen and (min-widht: 1280px) and (max-widht: 1339px) {
   .order-container {
     padding-left: 64px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .section {
     padding-top: 50px;
@@ -97,6 +112,12 @@ body {
 
   .about-section .text {
     letter-spacing: 0.04em;
+  }
+
+  .button {
+    padding-left: 39px;
+    padding-right: 39px;
+    font-size: 16px;
   }
 }
 
