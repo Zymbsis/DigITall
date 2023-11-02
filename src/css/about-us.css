@@ -2,7 +2,7 @@
   background-image: url(../img/mobile/About/aboutus-elements-mob1x.png);
   background-repeat: no-repeat;
   background-size: 250px 408px;
-  background-position: right 0 bottom -22px;
+  background-position: right bottom -22px;
 }
 
 @media (min-device-pixel-ratio: 2),

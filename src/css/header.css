@@ -96,7 +96,6 @@
 .mob-menu {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     position: fixed;
     height: 100vh;
     width: 274px;
@@ -108,7 +107,7 @@
     background-image: url(../img/mobile/Header/menu-elements-mob-1x.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-y: bottom;
+    background-position: center bottom;
     overflow: hidden;
     transform: translatex(100%);
     transition: transform 300ms ease-in-out;
