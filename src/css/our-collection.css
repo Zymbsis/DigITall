@@ -51,6 +51,26 @@
     letter-spacing: 0.05em;
 }
 
+#lightbox-container {
+    display: none;
+}
+
+@media screen and (min-resolution: 144dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-device-pixel-ratio: 2) {
+    .collection-section {
+        background-image: url(../img/mobile/Collection/collection-elements-mob2x.png);
+    }
+}
+
+@media screen and (min-resolution: 216dpi),
+screen and (min-resolution: 3dppx),
+screen and (min-device-pixel-ratio: 3) {
+    .collection-section {
+        background-image: url(../img/mobile/Collection/collection-elements-mob3x.png);
+    }
+}
+
 @media screen and (min-width: 768px) {
     .collection-section {
         background-image: url(../img/tablet/Collection/collection-elements-tab1x.png);
@@ -98,10 +118,66 @@
     .collection-text {
         font-size: 18px;
     }
+
+    /* ====== Image preview ====== */
+    #lightbox-container {
+        display: block;
+        pointer-events: none;
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 50;
+        transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1.0);
+    }
+
+    #lightbox-backdrop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        filter: blur(5);
+    }
+
+    #lightbox-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #lightbox-image {
+        width: 600px;
+        border-radius: 4px;
+    }
+
+    #lightbox-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: transparent;
+        stroke: #1c2225;
+        width: 26px;
+        height: 26px;
+        transition: transform 100ms ease-in-out;
+    }
+
+    /* ====== End ====== */
 }
 
 @media screen and (min-width: 1280px) {
-    .collection {
+    .collection-section {
         background-image: url(../img/desktop/Collection/collection-elements-desk1x.png);
         background-size: 169px 300px;
         background-position: left 0 top 296px;

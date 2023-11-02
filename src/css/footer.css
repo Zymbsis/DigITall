@@ -88,7 +88,7 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 144dpi),
     (min-resolution: 2dppx) {
-        .footer-container {
+        .footer {
             background-image: url(../img/desktop/Footer/footer-elements-desk2x.png);
         }
     }
@@ -96,7 +96,7 @@
     @media (min-device-pixel-ratio: 3),
     (min-resolution: 216dpi),
     (min-resolution: 3dppx) {
-        .footer-container {
+        .footer {
             background-image: url(../img/desktop/Footer/footer-elements-desk3x.png);
         }
     }

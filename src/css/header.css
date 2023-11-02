@@ -5,8 +5,8 @@
     top: 0;
     background-color: #1c2225;
     z-index: 5;
-    border-bottom: 1px solid rgba(236, 217, 121, 0.1);
-    box-shadow: 0px 1px 1px rgba(236, 217, 121, 0.08);
+    /* border-bottom: 1px solid rgba(236, 217, 121, 0.1);
+    box-shadow: 0px 1px 1px rgba(236, 217, 121, 0.08); */
 }
 
 .header-container {
@@ -94,6 +94,9 @@
 }
 
 .mob-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     position: fixed;
     height: 100vh;
     width: 274px;
@@ -101,7 +104,7 @@
     right: 0;
     z-index: 10;
     background-color: #ecd979;
-    padding: 20px;
+    padding: 20px 20px 274px;
     background-image: url(../img/mobile/Header/menu-elements-mob-1x.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -112,7 +115,7 @@
 }
 
 .is-open {
-    transform: translatex(0);
+    transform: translateX(0);
     pointer-events: auto;
 }
 
@@ -170,7 +173,8 @@
 .menu-nav {
     display: flex;
     align-items: center;
-    height: calc(100% - 271px);
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .menu-nav-list {
@@ -209,7 +213,7 @@
 
     .mob-menu {
         width: 380px;
-        padding: 20px 32px;
+        padding: 20px 32px 364px;
         background-image: url(../img/tablet/Header/menu-elements-tab-1x.png);
     }
 
@@ -232,10 +236,6 @@
     .close-menu-btn {
         width: 34px;
         height: 34px;
-    }
-
-    .menu-nav {
-        height: calc(100% - 394px);
     }
 
     .menu-nav-item:not(:last-child) {

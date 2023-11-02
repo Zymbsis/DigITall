@@ -1,4 +1,5 @@
 <section class="order-section section">
+<<<<<<< HEAD
   <div class="order-container container">
     <div class="order-form-wrapper">
       <h2 class="section-title order-title" id="order">
@@ -48,17 +49,46 @@
     <picture class="order-picture">
       <source
         srcset="
+=======
+    <div class="order-container container">
+        <div class="order-form-wrapper">
+            <h2 class="section-title order-title" id="order">
+                <span>Your order </span>is our priority: Personalized approach and
+                quality of service
+            </h2>
+            <form class="order-form" name="order-form" autocomplete="off">
+                <div class="interactive-input">
+                    <input class="form-input" type="text" name="user-name" id="user-name" placeholder="" required
+                          minlength="3" />
+                    <label class="form-label" for="user-name">Enter your full name</label>
+                </div>
+                <div class="interactive-input">
+                    <input class="form-input" type="email" name="email" id="user-email" placeholder="" required />
+                    <label class="form-label" for="user-email">Enter your email</label>
+                </div>
+                <div class="interactive-input">
+                    <textarea class="textarea" name="user-comment" id="user-comment" placeholder=""></textarea>
+                    <label class="form-label" for="user-comment">Comments</label>
+                </div>
+                <button type="submit" class="order-button">
+                    send<svg width="27" height="10" class="button-icon">
+                        <use href="./img/icons.svg#arrow"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+        <picture class="order-picture">
+            <source srcset="
+>>>>>>> js
           ./img/desktop/Order/order-girl-desk1x.jpg 1x,
           ./img/desktop/Order/order-girl-desk2x.jpg 2x,
           ./img/desktop/Order/order-girl-desk3x.jpg 3x
-        "
-        media="(min-width: 1280px)"
-      />
-      <source
-        srcset="
+        " media="(min-width: 1280px)" />
+            <source srcset="
           ./img/tablet/Order/order-girl-tab1x.jpg 1x,
           ./img/tablet/Order/order-girl-tab2x.jpg 2x,
           ./img/tablet/Order/order-girl-tab3x.jpg 3x
+<<<<<<< HEAD
         "
         media="(min-width: 768px)"
       />
@@ -73,3 +103,11 @@
     </picture>
   </div>
 </section>
+=======
+        " media="(min-width: 768px)" />
+            <img class="order-picture-bottom" src="./img/tablet/Order/order-girl-tab1x.jpg"
+                  alt="Embriodered waistcoat and shirt" width="638" height="521" />
+        </picture>
+    </div>
+</section>
+>>>>>>> js
