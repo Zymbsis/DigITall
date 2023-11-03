@@ -20,7 +20,6 @@
   transition: transform 300ms ease-in-out;
 }
 
-.header-nav-item .nav-link:hover::after,
 .header-nav-item .nav-link:focus::after {
   transform: scale(1);
 }
