@@ -134,6 +134,11 @@ body {
   }
 }
 
+.slogan {
+  font-size: 64px;
+  line-height: 1.16;
+}
+
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1260px;

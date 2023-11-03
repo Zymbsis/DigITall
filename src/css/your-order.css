@@ -227,3 +227,31 @@
         margin-bottom: 0;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .order-form {
+        max-width: 666px;
+    }
+
+    .order-section {
+        background-image: url(../img/desk1440/Order/order-girlingreen-desk-1440px1x.jpg), url(../img/desk1440/Order/order-elements-desk-1440px1x.png);
+        background-size: 1440px 776px, 325px 484px;
+        background-position: center top 75px, left 0 bottom 75px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 144dpi),
+    (min-resolution: 2dppx) {
+        .order-section {
+            background-image: url(../img/desk1440/Order/order-girlingreen-desk-1440px2x.jpg), url(../img/desk1440/Order/order-elements-desk-1440px2x.png);
+        }
+    }
+
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 216dpi),
+    (min-resolution: 3dppx) {
+        .order-section {
+            background-image: url(../img/desk1440/Order/order-girlingreen-desk-1440px3x.jpg), url(../img/desk1440/Order/order-elements-desk-1440px3x.png);
+        }
+    }
+}

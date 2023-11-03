@@ -7,15 +7,15 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 144dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 144dpi),
+(min-resolution: 2dppx) {
   .about-section {
     background-image: url(../img/mobile/About/aboutus-elements-mob2x.png);
   }
 
   @media (min-device-pixel-ratio: 3),
-    (min-resolution: 216dpi),
-    (min-resolution: 3dppx) {
+  (min-resolution: 216dpi),
+  (min-resolution: 3dppx) {
     .about-section {
       background-image: url(../img/mobile/About/aboutus-elements-mob3x.png);
     }
@@ -47,16 +47,16 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 144dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 144dpi),
+  (min-resolution: 2dppx) {
     .about-section {
       background-image: url(../img/tablet/About/aboutus-elements-tab2x.png);
     }
   }
 
   @media (min-device-pixel-ratio: 3),
-    (min-resolution: 216dpi),
-    (min-resolution: 3dppx) {
+  (min-resolution: 216dpi),
+  (min-resolution: 3dppx) {
     .about-section {
       background-image: url(../img/tablet/About/aboutus-elements-tab3x.png);
     }
@@ -76,16 +76,16 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 144dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 144dpi),
+  (min-resolution: 2dppx) {
     .about-section {
       background-image: url(../img/desktop/About/aboutus-elements-desk2x.png);
     }
   }
 
   @media (min-device-pixel-ratio: 3),
-    (min-resolution: 216dpi),
-    (min-resolution: 3dppx) {
+  (min-resolution: 216dpi),
+  (min-resolution: 3dppx) {
     .about-section {
       background-image: url(../img/desktop/About/aboutus-elements-desk3x.png);
     }
@@ -100,5 +100,11 @@
   .about-text-container {
     max-width: 436px;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-text-container {
+    max-width: 481px;
   }
 }
