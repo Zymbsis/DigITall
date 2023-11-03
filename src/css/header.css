@@ -134,16 +134,16 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 144dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 144dpi),
+(min-resolution: 2dppx) {
   .mob-menu {
     background-image: url(../img/mobile/Header/menu-elements-mob-2x.png);
   }
 }
 
 @media (min-device-pixel-ratio: 3),
-  (min-resolution: 216dpi),
-  (min-resolution: 3dppx) {
+(min-resolution: 216dpi),
+(min-resolution: 3dppx) {
   .mob-menu {
     background-image: url(../img/mobile/Header/menu-elements-mob-3x.png);
   }
@@ -232,16 +232,16 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 144dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 144dpi),
+  (min-resolution: 2dppx) {
     .mob-menu {
       background-image: url(../img/tablet/Header/menu-elements-tab-2x.png);
     }
   }
 
   @media (min-device-pixel-ratio: 3),
-    (min-resolution: 216dpi),
-    (min-resolution: 3dppx) {
+  (min-resolution: 216dpi),
+  (min-resolution: 3dppx) {
     .mob-menu {
       background-image: url(../img/tablet/Header/menu-elements-tab-3x.png);
     }
