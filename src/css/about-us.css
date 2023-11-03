@@ -2,7 +2,8 @@
   background-image: url(../img/mobile/About/aboutus-elements-mob1x.png);
   background-repeat: no-repeat;
   background-size: 250px 408px;
-  background-position: right 0 bottom -22px;
+  background-position: right bottom;
+  padding-bottom: 62px;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -41,7 +42,8 @@
   .about-section {
     background-image: url(../img/tablet/About/aboutus-elements-tab1x.png);
     background-size: 369px 484px;
-    background-position: right 0 bottom 0;
+    background-position: right bottom;
+    padding-bottom: 50px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -70,6 +72,7 @@
     background-image: url(../img/desktop/About/aboutus-elements-desk1x.png);
     background-size: 545px 484px;
     background-position: right 0 bottom -5px;
+    padding-bottom: 75px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -97,5 +100,11 @@
   .about-text-container {
     max-width: 436px;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-text-container {
+    max-width: 481px;
   }
 }
