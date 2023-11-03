@@ -169,14 +169,6 @@
         padding-top: 876px;
     }
 
-    @media (min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi),
-    (min-resolution: 3dppx) {
-        .order-container {
-            background-image: url(../img/tablet/Order/order-girlingreen-tab3x.jpg);
-        }
-    }
-
     .order-title {
         max-width: 542px;
     }
