@@ -25,3 +25,6 @@ dist-ssr
 
 # pull requests list
 pullrequests-list.txt
+
+# macos
+.DS_Store
