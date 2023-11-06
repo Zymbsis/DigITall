@@ -1,3 +1,5 @@
+// ============ Mobile and tablet navigation menu toggle ============
+
 (() => {
   const nav_menu = {
     openMenuButton: document.querySelector('[data-menu-open]'),
@@ -14,6 +16,8 @@
     nav_menu.menu.classList.toggle('is-open');
   }
 })();
+
+// ============ Smooth Scroll for Anchor Links ============
 
 document.addEventListener('DOMContentLoaded', function () {
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
@@ -73,29 +77,60 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+// ============ LightBox ============
+
 const collectionItems = document.querySelectorAll('.collection-item');
 const lightboxContainer = document.getElementById('lightbox-container');
 const lightboxImage = document.getElementById('lightbox-image');
 const lightboxClose = document.getElementById('lightbox-close');
+const lightboxOrderButton = document.querySelector('.lightbox-anchor-link');
+const lightboxBackdrop = document.getElementById('lightbox-backdrop');
+const lightboxTitle = document.querySelector('.lightbox-subtitle');
+const lightboxDesc = document.querySelector('.lightbox-desc');
+const lightboxPrice = document.querySelector('.lightbox-item-price');
 
 collectionItems.forEach((item, index) => {
   const img = item.querySelector('.collection-img');
-  //   const newSrc = img.src.slice(0, -6) + '3x.jpg';
-  const newSrc = img.src
-    .replace(/img\/desk1440\/Collection/g, 'assets')
-    .replace(/px1x/g, 'px3x');
-  const newWidth = img.width * 1.5;
-  const newHeight = img.height * 1.5;
+  const sources = item.querySelectorAll('source');
+  const baseImageUrl = `${window.location.origin}`;
 
-  img.addEventListener('click', () => {
-    lightboxImage.src = newSrc;
-    lightboxImage.alt = img.alt;
-    lightboxImage.width = newWidth;
-    lightboxImage.height = newHeight;
-    lightboxContainer.style.pointerEvents = 'auto';
-    lightboxContainer.style.visibility = 'visible';
-    lightboxContainer.style.opacity = '1';
-  });
+  // Find the source with the desired media condition and 3x resolution
+  let selectedSource = null;
+  for (const source of sources) {
+    if (
+      source.media === '(min-width: 1440px)' &&
+      source.srcset.includes('3x')
+    ) {
+      selectedSource = source;
+      break;
+    }
+  }
+
+  // Construct the new image source URL
+  if (selectedSource) {
+    const srcsetParts = selectedSource.srcset.split(', ');
+    const newSrc =
+      baseImageUrl + srcsetParts[srcsetParts.length - 1].split(' ')[0];
+    const newWidth = img.width * 1.5;
+    const newHeight = img.height * 1.5;
+
+    img.addEventListener('click', () => {
+      lightboxImage.src = newSrc;
+      lightboxImage.alt = img.alt;
+      lightboxImage.width = newWidth;
+      lightboxImage.height = newHeight;
+      lightboxTitle.textContent = item.querySelector(
+        '.collection-subtitle'
+      ).textContent;
+      lightboxDesc.textContent =
+        item.querySelector('.collection-desc').textContent;
+      lightboxPrice.textContent =
+        item.querySelector('.collection-text').textContent;
+      lightboxContainer.style.pointerEvents = 'auto';
+      lightboxContainer.style.visibility = 'visible';
+      lightboxContainer.style.opacity = '1';
+    });
+  }
 });
 
 function closeLightbox() {
@@ -104,6 +139,8 @@ function closeLightbox() {
   lightboxContainer.style.opacity = '0';
 }
 
+lightboxBackdrop.addEventListener('click', closeLightbox);
+lightboxOrderButton.addEventListener('click', closeLightbox);
 lightboxClose.addEventListener('click', closeLightbox);
 lightboxContainer.addEventListener('click', event => {
   if (event.target === lightboxContainer) {
